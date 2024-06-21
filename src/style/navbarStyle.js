@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
     display: flex;
 `;
 export const NavbarSmallContainer = styled.div`
-    z-index: 999;
+    z-index: 99999999999;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     position: fixed;
     height: 90px;

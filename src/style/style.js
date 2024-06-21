@@ -649,11 +649,11 @@ export const CampingFont = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #0000007a;
-    border-radius: 10px;
+    background: ${(props)=> props.$mainHeader ? "#00000066" : "#0000007a"};
+    border-radius: ${(props)=> props.$mainHeader ? "" : "10px"};
     transition: all 0.4s;
     &:hover{
-        background: none;
+        background: ${(props)=> props.$mainHeader ? "" : "none"};
     }
 `;
 export const CampingPlaceItem = styled.div`
@@ -737,6 +737,49 @@ export const CampingPlaceImgs = styled.div`
     }
 `
 
+export const MainContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: ${(props)=> props.$videos ? "80px" : "50px"};
+`
+export const SectionTitle = styled.div`
+    color: #373737;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Gilroy;
+    border-bottom: 2px solid #FF7A00;
+    padding-bottom: 4px;
+    margin-bottom: 40px;
+`
+export const MainCarousel = styled.div`
+    width: 1500px;
+    /* padding: 0px 10%; */
+`
+export const CarouselItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+
+`
+export const RecommendText = styled.div`
+    display: flex;
+    gap: 20px;
+    color: #373737;
+    font-size: ${(props)=> props.$model ? "16px" : "18px"};
+    font-weight: ${(props)=> props.$model ? "500" : "600"};
+
+`
+export const MainVideoContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    :hover{
+        cursor: pointer;
+    }
+`
 
 
 

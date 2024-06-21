@@ -18,3 +18,92 @@ body{
 input:focus{
   outline: none;
 }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff !important; 
+  opacity: 1 !important; 
+  transition: background-color 0.3s; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #006DAB !important; 
+  opacity: 1 !important; 
+}
+
+.swiper-pagination-bullet:hover {
+  background-color: #007aff; 
+}
+
+
+/* header 양옆에 있는 버튼 */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; 
+  background-color:#FFFFFF4D; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 40px !important; 
+  height: 40px !important; 
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 15px !important;
+  color: #fff;
+  width: 17px !important;
+  height: 17px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-multiple-carousel__arrow {
+  background: #006DAB !important; /* 버튼 배경 색상 */
+  border-radius: 50%; /* 버튼 모서리를 둥글게 */
+  width: 40px; /* 버튼 너비 */
+  height: 40px; /* 버튼 높이 */
+}
+
+.react-multi-carousel-list{
+  position: initial !important;
+}
+
+.custom-carousel .react-multi-carousel-item {
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  /* width: fit-content !important; */
+  /* margin: 0px 10px; */
+}
+
+/* .custom-carousel .react-multi-carousel-list {
+  border: 1px solid #000;
+} */

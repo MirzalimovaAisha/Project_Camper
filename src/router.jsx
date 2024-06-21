@@ -12,12 +12,14 @@ import TuningCarinfoComponent from "./components/pages/tuning/tuningCarinfo";
 import TuningComponents from "./components/pages/tuning/tuning";
 import UsedCarCarinfo from "./components/pages/used-car/usedCarCarinfo";
 import CampingPlaceCarinfo from "./components/pages/campingPlace/CampingPlaceCarinfo";
+import MainComponent from "./components/pages/home/main";
 
 const RouterComponent = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
+        <Route path="/" element={<MainComponent />} />
         <Route path="/motor" element={<Motor />} />
         <Route path="/motor/:id" element={<DetailsComponent />} />
         <Route path="/caravan/:id" element={<CaravanCarinfoComponent />} />

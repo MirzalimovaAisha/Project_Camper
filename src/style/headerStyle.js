@@ -6,7 +6,7 @@ import carinfoImg from "../assets/header-img19.jpg"
 
 export const HeaderContainer = styled.div`
     width: 100%;
-    height: 450px;
+    height: ${(props)=> props.$main ? "525px" : "450px"};
 `;
 
 export const HeaderImg = styled.div`
@@ -23,6 +23,7 @@ export const HeaderTextContainer = styled.div`
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     background: #00000069;
 `
 export const HeaderText = styled.div`

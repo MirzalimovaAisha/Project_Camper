@@ -26,8 +26,8 @@ export const usedCar = {
             used: { 
                 image: `${img1}`, 
                 name: "Used car 1", 
-                price: "200,000", 
-                company: "월든모빌", 
+                price: "2,000,000", 
+                company: "", 
                 rating: "2.3" 
             } 
         }, 
@@ -37,7 +37,7 @@ export const usedCar = {
                 image: `${img2}`, 
                 name: "Used car 2", 
                 price: "230,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "4.0" 
             } 
         }, 
@@ -47,7 +47,7 @@ export const usedCar = {
                 image: `${img3}`, 
                 name: "Used car 3", 
                 price: "250,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "5.1" 
             } 
         }, 
@@ -57,7 +57,7 @@ export const usedCar = {
                 image: `${img4}`, 
                 name: "Used car 4", 
                 price: "360,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "5.7" 
             } 
         }, 
@@ -67,7 +67,7 @@ export const usedCar = {
                 image: `${img5}`, 
                 name: "Used car 5", 
                 price: "500,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "6.5" 
             } 
         }, 
@@ -77,7 +77,7 @@ export const usedCar = {
                 image: `${img6}`, 
                 name: "Used car 6", 
                 price: "830,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "9.3" 
             } 
         }, 
@@ -87,7 +87,7 @@ export const usedCar = {
                 image: `${img7}`, 
                 name: "Used car 7", 
                 price: "700,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "7.5" 
             } 
         }, 
@@ -97,7 +97,7 @@ export const usedCar = {
                 image:`${img8}`, 
                 name: "Used car 8", 
                 price: "450,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "4.8" 
             } 
         }, 
@@ -107,7 +107,7 @@ export const usedCar = {
                 image: `${img9}`, 
                 name: "Used car 9", 
                 price: "900,500", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "9.2" 
             } 
         }, 
@@ -117,7 +117,7 @@ export const usedCar = {
                 image: `${img10}`, 
                 name: "Used car 10", 
                 price: "850,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "8.9" 
             } 
         }, 
@@ -137,7 +137,7 @@ export const usedCar = {
                 image: `${img12}`, 
                 name: "Used car 12", 
                 price: "200,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "1.8" 
             } 
         },{ 
@@ -146,7 +146,7 @@ export const usedCar = {
                 image: `${img13}`, 
                 name: "Used car 13", 
                 price: "900,250", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "9.8" 
             } 
         }, 
@@ -156,7 +156,7 @@ export const usedCar = {
                 image: `${img14}`, 
                 name: "Used car 14", 
                 price: "1,000,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "10" 
             } 
         }, 
@@ -166,7 +166,7 @@ export const usedCar = {
                 image:` ${img15}`, 
                 name: "Used car 15", 
                 price: "650,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "7.2" 
             } 
         }, 
@@ -176,7 +176,7 @@ export const usedCar = {
                 image: `${img16}`, 
                 name: "Used car 16", 
                 price: "750,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "9.0" 
             } 
         }, 
@@ -186,7 +186,7 @@ export const usedCar = {
                 image: `${img17}`, 
                 name: "Used car 17", 
                 price: "745,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "7.6" 
             } 
         }, 
@@ -196,7 +196,7 @@ export const usedCar = {
                 image: `${img18}`, 
                 name: "Used car 18", 
                 price: "120,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "1.5" 
             } 
         }, 
@@ -206,7 +206,7 @@ export const usedCar = {
                 image: `${img19}`, 
                 name: "Used car 19", 
                 price: "520,000", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "6.4" 
             } 
         }, 
@@ -216,7 +216,7 @@ export const usedCar = {
                 image: `${img20}`, 
                 name: "Used car 20", 
                 price: "620,500", 
-                company: "월든모빌", 
+                company: "be-coder-Ali", 
                 rating: "8.5" 
             } 
         }, 
