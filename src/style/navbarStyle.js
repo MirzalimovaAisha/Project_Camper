@@ -46,12 +46,13 @@ export const NavbarLogo = styled.div`
     color: var(--blue, #006dab);
     font-family: Montserrat;
     font-size: 38px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     display: flex;
     gap: 16px;
     align-items: center;
+    div{
+        cursor: pointer;
+    }
 `;
 export const NavbarRight = styled.div`
     display: flex;
@@ -59,6 +60,10 @@ export const NavbarRight = styled.div`
     align-items: center;
 `;
 export const NavbarImg = styled.img`
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
     @media only screen and (max-width: 700px) {
         display: ${(props) => (props.$user ? "none" : "")};
     }

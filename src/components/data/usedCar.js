@@ -26,9 +26,12 @@ export const usedCar = {
             used: { 
                 image: `${img1}`, 
                 name: "Used car 1", 
-                price: "2,000,000", 
-                company: "", 
-                rating: "2.3" 
+                price: "200,000", 
+                company: "다온티앤티", 
+                rating: "2.3",
+                location: "Seoul",
+                license: "1종 보통",
+                people: "4인",
             } 
         }, 
         { 
@@ -37,8 +40,11 @@ export const usedCar = {
                 image: `${img2}`, 
                 name: "Used car 2", 
                 price: "230,000", 
-                company: "be-coder-Ali", 
-                rating: "4.0" 
+                company: "다온티앤티", 
+                rating: "4.0",
+                location: "Seoul",
+                license: "1종 보통",
+                people: "4인",
             } 
         }, 
         { 
@@ -47,8 +53,11 @@ export const usedCar = {
                 image: `${img3}`, 
                 name: "Used car 3", 
                 price: "250,000", 
-                company: "be-coder-Ali", 
-                rating: "5.1" 
+                company: "다온티앤티", 
+                rating: "5.1",
+                location: "Seoul",
+                license: "1종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -57,8 +66,11 @@ export const usedCar = {
                 image: `${img4}`, 
                 name: "Used car 4", 
                 price: "360,000", 
-                company: "be-coder-Ali", 
-                rating: "5.7" 
+                company: "다온티앤티", 
+                rating: "5.7",
+                location: "Seoul",
+                license: "1종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -67,8 +79,11 @@ export const usedCar = {
                 image: `${img5}`, 
                 name: "Used car 5", 
                 price: "500,000", 
-                company: "be-coder-Ali", 
-                rating: "6.5" 
+                company: "다온티앤티", 
+                rating: "6.5",
+                location: "Busan",
+                license: "1종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -77,8 +92,11 @@ export const usedCar = {
                 image: `${img6}`, 
                 name: "Used car 6", 
                 price: "830,000", 
-                company: "be-coder-Ali", 
-                rating: "9.3" 
+                company: "다온티앤티", 
+                rating: "9.3",
+                location: "Busan",
+                license: "1종 보통",
+                people: "5인", 
             } 
         }, 
         { 
@@ -87,8 +105,11 @@ export const usedCar = {
                 image: `${img7}`, 
                 name: "Used car 7", 
                 price: "700,000", 
-                company: "be-coder-Ali", 
-                rating: "7.5" 
+                company: "다온티앤티", 
+                rating: "7.5",
+                location: "Busan",
+                license: "1종 보통",
+                people: "5인",
             } 
         }, 
         { 
@@ -97,8 +118,11 @@ export const usedCar = {
                 image:`${img8}`, 
                 name: "Used car 8", 
                 price: "450,000", 
-                company: "be-coder-Ali", 
-                rating: "4.8" 
+                company: "다온티앤티", 
+                rating: "4.8",
+                location: "Busan",
+                license: "1종 보통",
+                people: "5인",
             } 
         }, 
         { 
@@ -107,8 +131,11 @@ export const usedCar = {
                 image: `${img9}`, 
                 name: "Used car 9", 
                 price: "900,500", 
-                company: "be-coder-Ali", 
-                rating: "9.2" 
+                company: "다온티앤티", 
+                rating: "9.2" ,
+                location: "Busan",
+                license: "1종 보통",
+                people: "5인",
             } 
         }, 
         { 
@@ -117,8 +144,11 @@ export const usedCar = {
                 image: `${img10}`, 
                 name: "Used car 10", 
                 price: "850,000", 
-                company: "be-coder-Ali", 
-                rating: "8.9" 
+                company: "제일모빌", 
+                rating: "8.9" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "6인",
             } 
         }, 
         { 
@@ -127,8 +157,11 @@ export const usedCar = {
                 image: `${img11}`, 
                 name: "Used car 11", 
                 price: "750,000", 
-                company: "be-coder-Ali", 
-                rating: "8.4" 
+                company: "제일모빌", 
+                rating: "8.4" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "6인",
             } 
         }, 
         { 
@@ -137,8 +170,11 @@ export const usedCar = {
                 image: `${img12}`, 
                 name: "Used car 12", 
                 price: "200,000", 
-                company: "be-coder-Ali", 
-                rating: "1.8" 
+                company: "제일모빌", 
+                rating: "1.8" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "6인",
             } 
         },{ 
             id: 13, 
@@ -146,8 +182,11 @@ export const usedCar = {
                 image: `${img13}`, 
                 name: "Used car 13", 
                 price: "900,250", 
-                company: "be-coder-Ali", 
-                rating: "9.8" 
+                company: "제일모빌", 
+                rating: "9.8" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "5인",
             } 
         }, 
         { 
@@ -156,8 +195,11 @@ export const usedCar = {
                 image: `${img14}`, 
                 name: "Used car 14", 
                 price: "1,000,000", 
-                company: "be-coder-Ali", 
-                rating: "10" 
+                company: "제일모빌", 
+                rating: "10" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "5인",
             } 
         }, 
         { 
@@ -166,8 +208,11 @@ export const usedCar = {
                 image:` ${img15}`, 
                 name: "Used car 15", 
                 price: "650,000", 
-                company: "be-coder-Ali", 
-                rating: "7.2" 
+                company: "제일모빌", 
+                rating: "7.2" ,
+                location: "Daegu",
+                license: "2종 보통",
+                people: "4인",
             } 
         }, 
         { 
@@ -176,8 +221,11 @@ export const usedCar = {
                 image: `${img16}`, 
                 name: "Used car 16", 
                 price: "750,000", 
-                company: "be-coder-Ali", 
-                rating: "9.0" 
+                company: "영남캠핑카", 
+                rating: "9.0" ,
+                location: "Busan",
+                license: "2종 보통",
+                people: "4인",
             } 
         }, 
         { 
@@ -186,8 +234,11 @@ export const usedCar = {
                 image: `${img17}`, 
                 name: "Used car 17", 
                 price: "745,000", 
-                company: "be-coder-Ali", 
-                rating: "7.6" 
+                company: "영남캠핑카", 
+                rating: "7.6" ,
+                location: "Busan",
+                license: "2종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -196,8 +247,11 @@ export const usedCar = {
                 image: `${img18}`, 
                 name: "Used car 18", 
                 price: "120,000", 
-                company: "be-coder-Ali", 
-                rating: "1.5" 
+                company: "영남캠핑카", 
+                rating: "1.5" ,
+                location: "Busan",
+                license: "2종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -206,8 +260,11 @@ export const usedCar = {
                 image: `${img19}`, 
                 name: "Used car 19", 
                 price: "520,000", 
-                company: "be-coder-Ali", 
-                rating: "6.4" 
+                company: "영남캠핑카", 
+                rating: "6.4" ,
+                location: "Busan",
+                license: "2종 보통",
+                people: "3인",
             } 
         }, 
         { 
@@ -216,8 +273,11 @@ export const usedCar = {
                 image: `${img20}`, 
                 name: "Used car 20", 
                 price: "620,500", 
-                company: "be-coder-Ali", 
-                rating: "8.5" 
+                company: "영남캠핑카", 
+                rating: "8.5" ,
+                location: "Busan",
+                license: "2종 보통",
+                people: "4인",
             } 
         }, 
     ] 

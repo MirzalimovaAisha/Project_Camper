@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MotorsContainer = styled.div`
-    margin-top: ${(props)=> props.$campingPlace ? "" : "57px"};
+    margin-top: ${(props) => (props.$campingPlace ? "" : "57px")};
     display: flex;
     gap: 28px;
     justify-content: center;
@@ -53,9 +53,9 @@ export const MotorsLeftTextInput = styled.div`
 `;
 export const MotorsLeftCheckInputContainer = styled.div`
     display: flex;
-    gap: ${(props)=> props.$campingPlace ? "20px" : "10px"};
-    flex-direction: ${(props)=> props.$campingPlace ? "" : "column"};
-    align-items: ${(props)=> props.$campingPlace ? "center" : ""};
+    gap: ${(props) => (props.$campingPlace ? "20px" : "10px")};
+    flex-direction: ${(props) => (props.$campingPlace ? "" : "column")};
+    align-items: ${(props) => (props.$campingPlace ? "center" : "")};
 `;
 export const MotorsCheckBoxInput = styled.div`
     display: flex;
@@ -63,7 +63,7 @@ export const MotorsCheckBoxInput = styled.div`
     gap: 10px;
     color: #373737;
     font-size: 14px;
-    font-weight: ${(props)=> props.$campingPlace ? "400" : "500"};
+    font-weight: ${(props) => (props.$campingPlace ? "400" : "500")};
 
     input {
         width: 22px;
@@ -118,9 +118,10 @@ export const MotorsRightContainer = styled.div`
 `;
 
 export const MotorRightBox = styled.div`
-    display: ${(props)=> props.$campingPlaceSmall ? "flex" : "grid"};
-    grid-template-columns: ${(props) => props.$campingPlace ? "repeat(3, 1fr)" : "repeat(4, 1fr)"};
-    gap: ${(props)=> props.$campingPlaceSmall ? "10px" : "20px"};
+    display: ${(props) => (props.$campingPlaceSmall ? "flex" : "grid")};
+    grid-template-columns: ${(props) =>
+        props.$campingPlace ? "repeat(3, 1fr)" : "repeat(4, 1fr)"};
+    gap: ${(props) => (props.$campingPlaceSmall ? "10px" : "20px")};
     row-gap: ${(props) => (props.$campingPlace ? "40px" : "")};
     justify-content: center;
     @media only screen and (max-width: 1245px) {
@@ -203,8 +204,8 @@ export const MotorsCost = styled.div`
     color: #006dab;
     font-size: ${(props) => (props.$carinfoCost ? "30px" : "22px")};
     font-weight: 700;
-    @media only screen and (max-width: 700px){
-        font-size: ${(props)=> props.$carinfoCost ? "22px" : ""};
+    @media only screen and (max-width: 700px) {
+        font-size: ${(props) => (props.$carinfoCost ? "22px" : "")};
     }
 `;
 export const MotorsButtons = styled.div`
@@ -399,8 +400,8 @@ export const CarinfoInfoTitle = styled.div`
     display: flex;
     color: ${(props) => (props.$title2 ? "#373737CC" : "#373737")};
     font-weight: 500;
-    @media only screen and (max-width: 700px){
-        justify-content: ${(props)=> props.$title2 ? "flex-end" : ""};
+    @media only screen and (max-width: 700px) {
+        justify-content: ${(props) => (props.$title2 ? "flex-end" : "")};
     }
 `;
 export const CarinfoBoxContainer = styled.div`
@@ -497,16 +498,16 @@ export const ItemReviewBoxContainer = styled.div`
 `;
 export const ItemReviewItems = styled.div`
     border-bottom: 1px solid #37373726;
-    padding-bottom: ${(props)=> props.$campingPlace ? "10px" : "20px"};
+    padding-bottom: ${(props) => (props.$campingPlace ? "10px" : "20px")};
     width: ${(props) => (props.$qaTab ? "707px" : "")};
     display: ${(props) => (props.$qaTab ? "" : "flex")};
     justify-content: ${(props) => (props.$qaTab ? "" : "space-between")};
     padding: ${(props) => (props.$qaTab ? "0px 0px 10px 20px" : "")};
     margin-bottom: ${(props) => (props.$qaTab ? "25px" : "")};
-    flex-direction: ${(props)=> props.$campingPlace ? "column" : ""};
+    flex-direction: ${(props) => (props.$campingPlace ? "column" : "")};
     @media only screen and (max-width: 700px) {
         flex-direction: column;
-        align-items: ${(props)=> props.$campingPlace ? "" : "center"};
+        align-items: ${(props) => (props.$campingPlace ? "" : "center")};
         width: ${(props) => (props.$qaTab ? "100%" : "")};
         padding: 0px 0px 10px;
     }
@@ -640,8 +641,8 @@ export const CarinfoContactText = styled.div`
     margin-bottom: ${(props) => (props.$text1 ? "9px" : "")};
 `;
 export const CampingImgs = styled.img`
-    width: ${(props)=> props.$small ? "195px" : "395px"};
-    height: ${(props)=> props.$small ? "147px" : "300px"};
+    width: ${(props) => (props.$small ? "195px" : "395px")};
+    height: ${(props) => (props.$small ? "147px" : "300px")};
     object-fit: cover;
     border-radius: 10px;
 `;
@@ -649,11 +650,11 @@ export const CampingFont = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background: ${(props)=> props.$mainHeader ? "#00000066" : "#0000007a"};
-    border-radius: ${(props)=> props.$mainHeader ? "" : "10px"};
+    background: ${(props) => (props.$mainHeader ? "#00000066" : "#0000007a")};
+    border-radius: ${(props) => (props.$mainHeader ? "" : "10px")};
     transition: all 0.4s;
-    &:hover{
-        background: ${(props)=> props.$mainHeader ? "" : "none"};
+    &:hover {
+        background: ${(props) => (props.$mainHeader ? "" : "none")};
     }
 `;
 export const CampingPlaceItem = styled.div`
@@ -661,48 +662,46 @@ export const CampingPlaceItem = styled.div`
     transition: all 0.4s;
     cursor: pointer;
     &:hover {
-        transform: ${(props)=> props.$small ? "" : "scale(1.07)"};
+        transform: ${(props) => (props.$small ? "" : "scale(1.07)")};
         transition: all 0.4s;
     }
 `;
 
-
 export const CampingPlaceCarinfoContainer = styled.div`
-    margin-top: ${(props)=> props.$campingPlace ? "" : "40px"};
+    margin-top: ${(props) => (props.$campingPlace ? "" : "40px")};
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 1226px;
     font-size: 14px;
     color: #373737;
-    
+
     @media only screen and (max-width: 1245px) {
-        padding: ${(props)=> props.$campingPlace ? "" : "0px 70px"};
+        padding: ${(props) => (props.$campingPlace ? "" : "0px 70px")};
         width: 100%;
     }
     @media only screen and (max-width: 700px) {
-        padding: ${(props)=> props.$campingPlace ? "" : "0px 30px"};
+        padding: ${(props) => (props.$campingPlace ? "" : "0px 30px")};
     }
-
-`
+`;
 
 export const BlueText = styled.div`
-    color: #006DAB;
-    font-weight: ${(props)=> props.$bigText ? "500" : "400"};
-    font-size: ${(props)=> props.$bigText ? "16px" : "14px"};
-    margin-bottom: ${(props)=> props.$description ? "10px" : ""};
-`
+    color: #006dab;
+    font-weight: ${(props) => (props.$bigText ? "500" : "400")};
+    font-size: ${(props) => (props.$bigText ? "16px" : "14px")};
+    margin-bottom: ${(props) => (props.$description ? "10px" : "")};
+`;
 
 export const OrangeButton = styled.button`
     background: none;
     border-radius: 5px;
-    border: 1px solid #FF7A00;
+    border: 1px solid #ff7a00;
     padding: 3px 18px;
     font-size: 16px;
     font-weight: 500;
-    color: #FF7A00;
+    color: #ff7a00;
     cursor: pointer;
-`
+`;
 
 export const CampingInformationContainer = styled.div`
     display: grid;
@@ -710,20 +709,20 @@ export const CampingInformationContainer = styled.div`
     gap: 18px;
     width: 600px;
     @media only screen and (max-width: 1245px) {
-        width:auto;
+        width: auto;
     }
-`
+`;
 export const CampinInformation = styled.div`
     display: flex;
     gap: 11px;
     align-items: center;
-`
+`;
 export const CampingPlaceMap = styled.img`
     margin-top: 30px;
     display: flex;
     justify-content: center;
     width: 100%;
-`
+`;
 
 export const CampingPlaceImgs = styled.div`
     display: flex;
@@ -735,62 +734,350 @@ export const CampingPlaceImgs = styled.div`
         justify-content: start;
         padding: 0px 10px;
     }
-`
+`;
 
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: ${(props)=> props.$videos ? "80px" : "50px"};
-`
+    margin-top: ${(props) => (props.$videos ? "80px" : "50px")};
+`;
 export const SectionTitle = styled.div`
     color: #373737;
     font-weight: 700;
     font-size: 28px;
     font-family: Gilroy;
-    border-bottom: 2px solid #FF7A00;
+    border-bottom: 3px solid #ff7a00;
     padding-bottom: 4px;
     margin-bottom: 40px;
-`
+`;
 export const MainCarousel = styled.div`
-    width: 1500px;
-    /* padding: 0px 10%; */
-`
+    width: 1200px;
+    @media only screen and (max-width: 1245px) {
+        width: 784px;
+    }
+    @media only screen and (max-width: 700px) {
+        width: 450px;
+    }
+`;
 export const CarouselItem = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     width: fit-content;
-
-`
+`;
 export const RecommendText = styled.div`
     display: flex;
     gap: 20px;
     color: #373737;
-    font-size: ${(props)=> props.$model ? "16px" : "18px"};
-    font-weight: ${(props)=> props.$model ? "500" : "600"};
-
-`
+    font-size: ${(props) => (props.$model ? "16px" : "18px")};
+    font-weight: ${(props) => (props.$model ? "500" : "600")};
+`;
 export const MainVideoContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    :hover{
+    grid-template-columns: ${(props) =>
+        props.$blogs ? "repeat(3, 1fr)" : "repeat(4, 1fr)"};
+    gap: ${(props) => (props.$blogs ? "10px" : "20px")};
+    :hover {
         cursor: pointer;
+    }
+    @media only screen and (max-width: 1245px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media only screen and (max-width: 700px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`;
+export const BlogsText = styled.div`
+    color: ${(props) => (props.$orange ? "#FF7A00" : "$000")};
+    font-weight: ${(props) => (props.$title ? "600" : "400")};
+    font-size: ${(props) => (props.$title ? "28px" : "17px")};
+    width: ${(props) => (props.$texts ? "380px" : "")};
+    margin-bottom: ${(props) => (props.$title ? "35px" : "10px")};
+    @media only screen and (max-width: 1245px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+`;
+
+export const LoginInput = styled.input`
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #3737371a;
+    margin: ${(props)=> props.$last ? "10px 0px 15px 0px" : "10px 0px 20px 0px" };
+    font-size: 15px;
+    font-family: "Open Sans";
+    &:focus {
+        outline: none;
+    }
+`;
+
+export const SpaceBetweenWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    input {
+        height: 20px;
+        width: 20px;
+        background: #37373726 !important;
+        border: none !important;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Open Sans";
+    }
+`;
+
+export const CheckBox2 = styled.input`
+    height: 20px;
+    width: 20px;
+    background: #3737371a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+`;
+
+export const SignInButton = styled.button`
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: #006dab;
+    border-radius: 10px;
+    margin: 25px 0 0;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Open Sans";
+`;
+
+export const LoginLines = styled.div`
+    border: 1px solid #37373726;
+    width: 100px;
+`;
+
+export const CreateAccountButton = styled.button`
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    border: 2px solid #006dab;
+    border-radius: 10px;
+    margin: 15px 0px 0px 0px;
+    color: #006dab;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        background: #006dab;
+        color: white;
+        transition: all 0.2s;
+    }
+`;
+
+export const LoginText = styled.div`
+    color: ${(props) => (props.$title ? "#373737CC" : "#373737")};
+    font-weight: ${(props) => (props.$title ? "600" : "400")};
+    font-size: ${(props) => (props.$title ? "16px" : "14px")};
+    margin: ${(props) => (props.$title ? "0px 0px 0px 10px" : "")};
+    font-family: "Open Sans";
+`;
+export const RegistrateContainer = styled.div`
+    background: -moz-linear-gradient(
+        45deg,
+        #006dab 0%,
+        #26c9f2 29%,
+        #f211d6 66%,
+        #006dab 100%
+    );
+    background: -webkit-linear-gradient(
+        45deg,
+        #006dab 0%,
+        #26c9f2 29%,
+        #f211d6 66%,
+        #006dab 100%
+    );
+    background: linear-gradient(
+        45deg,
+        #006dab 0%,
+        #26c9f2 29%,
+        #f211d6 66%,
+        #006dab 100%
+    );
+    height: 100vh;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        width: 70vmax;
+        height: 70vmax;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.07);
+        left: -20vmin;
+        top: -20vmin;
+        animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+        z-index: 1;
+        will-change: border-radius, transform;
+        transform-origin: 55% 55%;
+        pointer-events: none;
+    }
+    &::after {
+        width: 70vmin;
+        height: 70vmin;
+        left: auto;
+        right: -10vmin;
+        top: auto;
+        bottom: 0;
+        animation: morph 10s linear infinite alternate,
+            spin 26s linear infinite reverse;
+        transform-origin: 20% 20%;
+    }
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%;
+        }
+    }
+
+    @keyframes morph {
+        0% {
+            border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+        }
+        100% {
+            border-radius: 40% 60%;
+        }
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    .st0 {
+        display: none;
+    }
+    .st1 {
+        display: inline;
+    }
+    .st2 {
+        opacity: 0.29;
+    }
+    .st3 {
+        fill: #ffffff;
+    }
+    .st4 {
+        clip-path: url(#SVGID_2_);
+        fill: #ffffff;
+    }
+    .st5 {
+        clip-path: url(#SVGID_4_);
+    }
+    .st6 {
+        clip-path: url(#SVGID_6_);
+    }
+    .st7 {
+        clip-path: url(#SVGID_8_);
+    }
+    .st8 {
+        clip-path: url(#SVGID_10_);
+    }
+    .st9 {
+        fill: none;
+    }
+    .st10 {
+        clip-path: url(#SVGID_12_);
+    }
+    .st11 {
+        opacity: 0.7;
+    }
+    .st12 {
+        clip-path: url(#SVGID_14_);
+    }
+    .st13 {
+        opacity: 0.2;
+    }
+    .st14 {
+        clip-path: url(#SVGID_16_);
+    }
+    .st15 {
+        opacity: 0.3;
+        fill: #ffffff;
+        enable-background: new;
+    }
+`;
+
+export const RegistrateContainerItem = styled.div`
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans";
+    z-index: 1;
+    span{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+
+        img{
+            cursor: pointer;
+        }
     }
 `
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const BlogContainer = styled.div`
+    display: flex;
+    gap: 33px;
+    @media only screen and (max-width: 1245px) {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+`
