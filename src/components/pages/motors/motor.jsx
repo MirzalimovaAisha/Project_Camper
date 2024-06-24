@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
     BlueButton,
     CarMenuContainer,
@@ -53,9 +53,21 @@ import Accordion from "@mui/joy/Accordion";
 import AccordionDetails from "@mui/joy/AccordionDetails";
 import AccordionGroup from "@mui/joy/AccordionGroup";
 import AccordionSummary from "@mui/joy/AccordionSummary";
+import GridMenu from "./gridMenu";
+import VMenu from "./vMenu";
 
 const Motor = () => {
     const data = campcar.maindata;
+
+    const [active, setActive] = useState(true);
+    function handleGridMenu(){
+        setActive(true);
+    };
+    function handleVMenu(){
+        setActive(false)
+    };
+
+    
 
     return (
         <div>
@@ -313,11 +325,11 @@ const Motor = () => {
 
                             <MotorLeftTopLeftRight>
                                 <MotorLeftInputImgs>
-                                    <MotorLeftImgs>
-                                        <Imgwrapper src={fourDots} />
+                                    <MotorLeftImgs  onClick={handleGridMenu}>
+                                        <Imgwrapper src={fourDots}/>
                                     </MotorLeftImgs>
-                                    <MotorLeftImgs $right>
-                                        <Imgwrapper src={roundView} />
+                                    <MotorLeftImgs $right  onClick={handleVMenu}>
+                                        <Imgwrapper src={roundView}/>
                                     </MotorLeftImgs>
                                 </MotorLeftInputImgs>
                             </MotorLeftTopLeftRight>
@@ -342,51 +354,16 @@ const Motor = () => {
 
                             <MotorLeftInputImgs $desktop>
                                 <MotorLeftImgs>
-                                    <Imgwrapper src={fourDots} />
+                                    <Imgwrapper src={fourDots} onClick={handleGridMenu} />
                                 </MotorLeftImgs>
                                 <MotorLeftImgs $right>
-                                    <Imgwrapper src={roundView} />
+                                    <Imgwrapper src={roundView} onClick={handleVMenu}/>
                                 </MotorLeftImgs>
                             </MotorLeftInputImgs>
                         </MotorLeftTopRight>
                     </MotorsRightContainerTop>
 
-                    <MotorRightBox>
-                        {data.map((value) => {
-                            return (
-                                <Link to={`/motor/${value.id}`}>
-                                    <MotorItems key={value.id}>
-                                        <MotorItemImg>
-                                            <MotorImgs src={value.car.photo} />
-                                        </MotorItemImg>
-                                        <MotorItemTexts>
-                                            <MotorName>
-                                                {value.car.name}
-                                            </MotorName>
-                                            <MotorBrand>
-                                                <div>{value.car.company}</div>
-                                                <MotorRating>
-                                                    <Imgwrapper src={star} />
-                                                    <div>
-                                                        {value.car.rating}
-                                                    </div>
-                                                </MotorRating>
-                                            </MotorBrand>
-                                            <MotorsCost>
-                                                {value.car.cost}
-                                            </MotorsCost>
-                                            <MotorsButtons>
-                                                <BlueButton $blue>
-                                                    Order
-                                                </BlueButton>
-                                                <BlueButton>Compare</BlueButton>
-                                            </MotorsButtons>
-                                        </MotorItemTexts>
-                                    </MotorItems>
-                                </Link>
-                            );
-                        })}
-                    </MotorRightBox>
+                    {active? <GridMenu /> : <VMenu />}
                 </MotorsRightContainer>
             </MotorsContainer>
         </div>

@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
     display: flex;
 `;
 export const NavbarSmallContainer = styled.div`
-    z-index: 99999999999;
+    z-index: 999;
     box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
     position: fixed;
     height: 90px;
@@ -16,9 +16,6 @@ export const NavbarSmallContainer = styled.div`
     justify-content: space-around;
     align-items: center;
     width: 100%;
-
-    @media only screen and (max-width: 1245px) {
-    }
 `;
 export const NavbarMenu = styled.div`
     display: flex;

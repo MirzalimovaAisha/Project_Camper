@@ -36,6 +36,8 @@ export const HeaderTitle = styled.div`
     font-size: 80px;
     font-weight: 700;
     text-align: center;
+    
+
 `
 export const CarinfoHeaderContainer = styled.div`
     background-image: url(${carinfoImg});
@@ -47,6 +49,9 @@ export const CarinfoHeaderContainer = styled.div`
     justify-content: center;
     align-items: center;
     background-position: center bottom;
+    @media only screen and (max-width:700px){
+        height: 350px;
+    }
 `
 export const CarinfoTexts = styled.div`
     display: flex;
@@ -62,6 +67,9 @@ export const CarinfoName = styled.div`
     color: #FFF;
     font-size: 60px;
     font-weight: 700;
+    @media only screen and (max-width:700px){
+        font-size: 40px;
+    }
 `
 export const CarinfoButtons = styled.div`
     display: flex;

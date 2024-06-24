@@ -113,7 +113,14 @@ export const MotorsRightContainer = styled.div`
     gap: 37px;
     align-items: center;
     @media only screen and (max-width: 1245px) {
+        /* width: 674px; */
+        width: 100%;
+        padding: 50px;
+    }
+    @media only screen and (max-width: 700px) {
         width: 674px;
+        padding: 0;
+        /* padding: 50px; */
     }
 `;
 
@@ -124,9 +131,13 @@ export const MotorRightBox = styled.div`
     gap: ${(props) => (props.$campingPlaceSmall ? "10px" : "20px")};
     row-gap: ${(props) => (props.$campingPlace ? "40px" : "")};
     justify-content: center;
+    transition: all 0.2s;
     @media only screen and (max-width: 1245px) {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+    }
+    @media only screen and (max-width: 819px) {
+        grid-template-columns:${(props)=> props.$campingPlace ? "repeat(1, 1fr)" : "repeat(2, 1fr)"};
     }
     @media only screen and (max-width: 700px) {
         grid-template-columns: repeat(1, 1fr);
@@ -136,8 +147,12 @@ export const MotorImgs = styled.img`
     width: 200px;
     height: 121px;
     @media only screen and (max-width: 1245px) {
-        width: 271px;
-        height: 177px;
+        width: ${(props)=> props.$VMenu ? "200px" : "271px"};
+        height: ${(props)=> props.$VMenu ? "121px" : "177px"};
+    }
+    @media only screen and (max-width: 700px) {
+        width: ${(props)=> props.$VMenu ? "100px" : ""};
+        height: ${(props)=> props.$VMenu ? "85px" : ""};
     }
 `;
 export const MotorItemImg = styled.div`
@@ -149,7 +164,10 @@ export const MotorItemTexts = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    @media only screen and (max-width: 1245px) {
+    justify-content: space-between;
+    padding: ${(props)=> props.$vMenu ? "30px" : ""};
+    @media only screen and (max-width: 700px) {
+        padding: ${(props)=> props.$vMenu ? "20px" : ""};
     }
 `;
 export const MotorItems = styled.div`
@@ -177,10 +195,10 @@ export const MotorName = styled.div`
     color: var(--text, #373737);
     font-weight: 600;
     font-size: ${(props) => (props.$campingPlace ? "22px" : "16px")};
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: ${(props)=> props.$vMenu ? "" : "10px"};
+    margin-bottom: ${(props)=> props.$vMenu ? "" : "5px"};
     @media only screen and (max-width: 1245px) {
-        margin-top: ${(props) => (props.$campingPlace ? "" : "30px")};
+        margin-top: ${(props)=> props.$gridMenu ? "30px" : ""};
         font-family: ${(props) => (props.$campingPlace ? "" : "Open Sans")};
         font-size: ${(props) => (props.$campingPlace ? "22px" : "18px")};
     }
@@ -192,6 +210,7 @@ export const MotorBrand = styled.div`
     justify-content: space-between;
     align-items: center;
     font-size: ${(props) => (props.$location ? "16px" : "12px")};
+    margin-bottom: ${(props)=> props.$vMenu ? "45px" : ""};
 `;
 export const MotorRating = styled.div`
     display: flex;
@@ -211,6 +230,7 @@ export const MotorsCost = styled.div`
 export const MotorsButtons = styled.div`
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 `;
 export const BlueButton = styled.button`
     border-radius: 10px;
@@ -218,10 +238,10 @@ export const BlueButton = styled.button`
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     font-family: Montserrat;
     cursor: pointer;
-
+    width: 100%;
     background: ${(props) => (props.$sendButton ? "#006DAB" : "#fff")};
     color: ${(props) => (props.$sendButton ? "#fff" : "#006dab")};
-    width: ${(props) => (props.$sendButton ? "100%" : "94px")};
+    /* width: ${(props) => (props.$sendButton ? "100%" : "94px")}; */
     font-size: ${(props) => (props.$sendButton ? "16px" : "14px")};
     height: ${(props) => (props.$sendButton ? "50px" : "35px")};
     font-weight: ${(props) => (props.$sendButton ? "400" : "700")};
@@ -233,12 +253,10 @@ export const BlueButton = styled.button`
     }
 
     @media only screen and (max-width: 1245px) {
-        height: 45px;
+        /* height: 45px; */
+        height: ${(props)=> props.$vMenu ? "35px" : "45px"};
         font-size: 16px;
         font-family: "Open Sans";
-        background: ${(props) => (props.$blue ? "#006DAB" : "")};
-        color: ${(props) => (props.$blue ? "#fff" : "")};
-        width: ${(props) => (props.$sendButton ? "100%" : "144.036px")};
     }
 `;
 export const MotorsRightContainerTop = styled.div`
@@ -248,7 +266,7 @@ export const MotorsRightContainerTop = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 704px) {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -267,7 +285,7 @@ export const MotorLeftTopLeftText = styled.div`
 `;
 export const MotorLeftTopLeftRight = styled.div`
     display: none;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 703px) {
         display: flex;
     }
 `;
@@ -316,6 +334,7 @@ export const MotorLeftDownArrow = styled.div`
     padding: 8px 7px;
 `;
 export const MotorLeftImgs = styled.div`
+    background: #FDFDFD;
     width: 40px;
     height: 30px;
     border-radius: ${(props) =>
@@ -324,10 +343,14 @@ export const MotorLeftImgs = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    :hover {
+        cursor: pointer;
+    }
 `;
 export const MotorLeftInputImgs = styled.div`
     display: flex;
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 703px) {
         display: ${(props) => (props.$desktop ? "none" : "flex")};
     }
 `;
@@ -463,7 +486,7 @@ export const CarinfoTabsContainer = styled.div`
         padding-left: ${(props) => (props.$tabItem ? "10%" : "")};
     }
     @media only screen and (max-width: 700px) {
-        padding-left: ${(props) => (props.$tabItem ? "10%" : "")};
+        padding-left: ${(props) => (props.$tabItem ? "0px" : "")};
     }
 `;
 
@@ -1080,4 +1103,29 @@ export const BlogContainer = styled.div`
         justify-content: center;
         align-items: center;
     }
+    `
+
+export const VMenuContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    @media only screen and (max-width: 700px) {
+        width: max-content;
+    }
+`
+export const VMenuItems = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+`
+
+export const VmenuCost = styled.div`
+    font-size: 22px;
+    font-weight: 700;
+    color: #006DAB;
 `

@@ -26,7 +26,7 @@ const ItemReview = () => {
     return (
         <div>
             <CarinfoTabsContainer >
-                <diw>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
                     <ItemReviewTop>
                         <MotorLeftTopLeftText>
                             <MotorItemNumbers>Premium Review</MotorItemNumbers>
@@ -74,7 +74,7 @@ const ItemReview = () => {
                             </ItemReviewBoxContainer>
                         );
                     })}
-                </diw>
+                </div>
             </CarinfoTabsContainer>
         </div>
     );

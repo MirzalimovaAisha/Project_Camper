@@ -35,13 +35,14 @@ export default function MobileMenu() {
                 width: anchor === "top" || anchor === "bottom" ? "auto" : 250,
                 padding: "50px 37px",
                 display: "flex",
+                zIndex:"99999999"
             }}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List
-                sx={{
+                sx={{   
                     display: "flex",
                     width: "100%",
                     flexDirection: "column",
