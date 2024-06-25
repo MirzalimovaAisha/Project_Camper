@@ -29,7 +29,7 @@ export const tuning = {
             id: 1,
             tuning: {
                 image: `${img1}`,
-                name: "Tuning car1",
+                name: "Elddis",
                 price: "34,000,000",
                 company: "다온티앤티",
                 rating: "2.3",
@@ -42,7 +42,7 @@ export const tuning = {
             id: 2,
             tuning: {
                 image: `${img2}`,
-                name: "Tuning car2",
+                name: "Forest River",
                 price: "56,800,000",
                 company: "스타모빌", 
                 rating: "5.6",
@@ -55,7 +55,7 @@ export const tuning = {
             id: 3,
             tuning: {
                 image: `${img3}`,
-                name: "Tuning car3",
+                name: "Blucamp",
                 price: "80,000,000",
                 company: "다온티앤티",
                 rating: "8.4",
@@ -68,7 +68,7 @@ export const tuning = {
             id: 4,
             tuning: {
                 image: `${img4}`,
-                name: "Tuning car4",
+                name: "Keystone RV Co",
                 price: "9,000,000",
                 company: "제일모빌",
                 rating: "5.1",
@@ -81,7 +81,7 @@ export const tuning = {
             id: 5,
             tuning: {
                 image: `${img5}`,
-                name: "Tuning car5",
+                name: "Benimar",
                 price: "1,000,000",
                 company: "제일모빌",
                 rating: "10",
@@ -94,7 +94,7 @@ export const tuning = {
             id: 6,
             tuning: {
                 image: `${img6}`,
-                name: "Tuning car6",
+                name: "Carthago",
                 price: "78,900,000",
                 company: "스타모빌",
                 rating: "8.5",
@@ -107,7 +107,7 @@ export const tuning = {
             id: 7,
             tuning: {
                 image: `${img7}`,
-                name: "Tuning car7",
+                name: "Carado",
                 price: "3,000,000",
                 company: "제일모빌",
                 rating: "1.5",
@@ -120,7 +120,7 @@ export const tuning = {
             id: 8,
             tuning: {
                 image: `${img8}`,
-                name: "Tuning car8",
+                name: "Chausson",
                 price: "1,500,000",
                 company: "다온티앤티",
                 rating: "10",
@@ -133,7 +133,7 @@ export const tuning = {
             id: 9,
             tuning: {
                 image: `${img9}`,
-                name: "Tuning car9",
+                name: "Dethleffs",
                 price: "73,000,000",
                 company: "영남캠핑카",
                 rating: "5.3",
@@ -146,7 +146,7 @@ export const tuning = {
             id: 10,
             tuning: {
                 image: `${img10}`,
-                name: "Tuning car10",
+                name: "Frankia",
                 price: "8,000,000,000",
                 company: "영남캠핑카",
                 rating: "8.5",
@@ -159,7 +159,7 @@ export const tuning = {
             id: 11,
             tuning: {
                 image: `${img11}`,
-                name: "Tuning car11",
+                name: "Hobby",
                 price: "35,00,000",
                 company: "스타모빌",
                 rating: "2.3",
@@ -172,7 +172,7 @@ export const tuning = {
             id: 12,
             tuning: {
                 image: `${img12}`,
-                name: "Tuning car12",
+                name: "Hymer",
                 price: "65,000,000",
                 company: "스타모빌",
                 rating: "6.5",
@@ -185,7 +185,7 @@ export const tuning = {
             id: 13,
             tuning: {
                 image: `${img13}`,
-                name: "Tuning car13",
+                name: "Joa Camp",
                 price: "69,999,999",
                 company: "제일모빌",
                 rating: "2.4",
@@ -198,7 +198,7 @@ export const tuning = {
             id: 14,
             tuning: {
                 image: `${img14}`,
-                name: "Tuning car14",
+                name: "Knaus",
                 price: "34,700,000",
                 company: "다온티앤티",
                 rating: "8.3",
@@ -211,7 +211,7 @@ export const tuning = {
             id: 15,
             tuning: {
                 image: `${img15}`,
-                name: "Tuning car15",
+                name: "Laika",
                 price: "90,000,000",
                 company: "영남캠핑카",
                 rating: "9.0",
@@ -224,7 +224,7 @@ export const tuning = {
             id: 16,
             tuning: {
                 image: `${img16}`,
-                name: "Tuning car16",
+                name: "Le Voyageur",
                 price: "23,500,000",
                 company: "제일모빌",
                 rating: "9.5",
@@ -237,7 +237,7 @@ export const tuning = {
             id: 17,
             tuning: {
                 image: `${img17}`,
-                name: "Tuning car17",
+                name: "Malibu",
                 price: "2,000,000,000",
                 company: "다온티앤티",
                 rating: "4.9",
@@ -250,7 +250,7 @@ export const tuning = {
             id: 18,
             tuning: {
                 image: `${img18}`,
-                name: "Tuning car18",
+                name: "Mobilvetta",
                 price: "20,000,000",
                 company: "영남캠핑카",
                 rating: "1.5",
@@ -263,7 +263,7 @@ export const tuning = {
             id: 19,
             tuning: {
                 image: `${img19}`,
-                name: "Tuning car19",
+                name: "Pilote",
                 price: "89,900,000",
                 company: "스타모빌",
                 rating: "3.3",
@@ -276,7 +276,7 @@ export const tuning = {
             id: 20,
             tuning: {
                 image: `${img20}`,
-                name: "Tuning car20",
+                name: "Rapido",
                 price: "78,999,000",
                 company: "제일모빌",
                 rating: "2.5",
@@ -289,7 +289,7 @@ export const tuning = {
             id: 21,
             tuning: {
                 image: `${img21}`,
-                name: "Tuning car21",
+                name: "Roller Team",
                 price: "60,000,000",
                 company: "제일모빌",
                 rating: "4.5",
@@ -302,7 +302,7 @@ export const tuning = {
             id: 22,
             tuning: {
                 image: `${img22}`,
-                name: "Tuning car22",
+                name: "Swift",
                 price: "35,500,000",
                 company: "다온티앤티",
                 rating: "3.6",
@@ -315,7 +315,7 @@ export const tuning = {
             id: 23,
             tuning: {
                 image: `${img23}`,
-                name: "Tuning car23",
+                name: "Weinsberg",
                 price: "20,000,000",
                 company: "다온티앤티",
                 rating: "5.1",
@@ -328,7 +328,7 @@ export const tuning = {
             id: 24,
             tuning: {
                 image: `${img24}`,
-                name: "Tuning car24",
+                name: "Auto-Trail",
                 price: "67,000,000",
                 company: "다온티앤티",
                 rating: "6.5",

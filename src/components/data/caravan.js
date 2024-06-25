@@ -32,7 +32,7 @@ export const caravan = {
             id: 1,
             caravan: {
                 image: `${img1}`,
-                name: "Caravan 1",
+                name: "Knaus",
                 price: "40,000,000",
                 company: "다온티앤티",
                 rating: "5.3",
@@ -45,7 +45,7 @@ export const caravan = {
             id: 2,
             caravan: {
                 image: `${img2}`,
-                name: "Caravan 2",
+                name: "Adria",
                 price: "230,000,000",
                 company: "제일모빌",
                 rating: "5.0",
@@ -58,7 +58,7 @@ export const caravan = {
             id: 3,
             caravan: {
                 image: `${img3}`,
-                name: "Caravan 3",
+                name: "Caravelair",
                 price: "61,000,000",
                 company: "제일모빌",
                 rating: "8.9",
@@ -71,7 +71,7 @@ export const caravan = {
             id: 4,
             caravan: {
                 image: `${img4}`,
-                name: "Caravan 4",
+                name: "Hymer",
                 price: "10,000,000",
                 company: "다온티앤티",
                 rating: "2.7",
@@ -84,7 +84,7 @@ export const caravan = {
             id: 5,
             caravan: {
                 image: `${img5}`,
-                name: "Caravan 5",
+                name: "Coachman",
                 price: "1,000,000",
                 company: "제일모빌",
                 rating: "9.5",
@@ -97,7 +97,7 @@ export const caravan = {
             id: 6,
             caravan: {
                 image: `${img6}`,
-                name: "Caravan 6",
+                name: "Elddis",
                 price: "1,000,000,000",
                 company: "영남캠핑카",
                 rating: "9.1",
@@ -110,7 +110,7 @@ export const caravan = {
             id: 7,
             caravan: {
                 image: `${img7}`,
-                name: "Caravan 7",
+                name: "Airstream",
                 price: "50,000,000",
                 company: "스타모빌",
                 rating: "5.5",
@@ -123,7 +123,7 @@ export const caravan = {
             id: 8,
             caravan: {
                 image: `${img8}`,
-                name: "Caravan 8",
+                name: "Jayco, Inc.",
                 price: "6,000,000",
                 company: "스타모빌",
                 rating: "3.1",
@@ -136,7 +136,7 @@ export const caravan = {
             id: 9,
             caravan: {
                 image: `${img9}`,
-                name: "Caravan 9",
+                name: "Auto-Sleepers",
                 price: "67,000,000",
                 company: "영남캠핑카",
                 rating: "8.9",
@@ -149,7 +149,7 @@ export const caravan = {
             id: 10,
             caravan: {
                 image: `${img10}`,
-                name: "Caravan 10",
+                name: "Bürstner",
                 price: "25,000,000",
                 company: "제일모빌",
                 rating: "4.5",
@@ -162,7 +162,7 @@ export const caravan = {
             id: 11,
             caravan: {
                 image: `${img11}`,
-                name: "Caravan 11",
+                name: "Dutchmen",
                 price: "4,000,000",
                 company: "다온티앤티",
                 rating: "6.4",
@@ -175,7 +175,7 @@ export const caravan = {
             id: 12,
             caravan: {
                 image: `${img12}`,
-                name: "Caravan 12",
+                name: "Autotrail motorhomes",
                 price: "10,000,000",
                 company: "영남캠핑카",
                 rating: "1.0",
@@ -188,7 +188,7 @@ export const caravan = {
             id: 13,
             caravan: {
                 image: `${img13}`,
-                name: "Caravan 13",
+                name: "Cruiser RV, LLC",
                 price: "97,000,000",
                 company: "다온티앤티",
                 rating: "9.8",
@@ -201,7 +201,7 @@ export const caravan = {
             id: 14,
             caravan: {
                 image: `${img14}`,
-                name: "Caravan 14",
+                name: "Coachmen Recreational",
                 price: "2,000,000",
                 company: "제일모빌",
                 rating: "10",
@@ -214,7 +214,7 @@ export const caravan = {
             id: 15,
             caravan: {
                 image: `${img15}`,
-                name: "Caravan 15",
+                name: "Fleetwood Motor",
                 price: "60,000,000",
                 company: "영남캠핑카",
                 rating: "5.2",
@@ -227,7 +227,7 @@ export const caravan = {
             id: 16,
             caravan: {
                 image: `${img16}`,
-                name: "Caravan 16",
+                name: "Thor Motor Coach",
                 price: "85,000,000",
                 company: "스타모빌",
                 rating: "9.0",
@@ -240,7 +240,7 @@ export const caravan = {
             id: 17,
             caravan: {
                 image: `${img17}`,
-                name: "Caravan 17",
+                name: "Chausson",
                 price: "74,500,000",
                 company: "다온티앤티",
                 rating: "7,6",
@@ -253,7 +253,7 @@ export const caravan = {
             id: 18,
             caravan: {
                 image: `${img18}`,
-                name: "Caravan 18",
+                name: "Grand Design RV",
                 price: "12,000,000",
                 company: "영남캠핑카",
                 rating: "1.5",
@@ -266,7 +266,7 @@ export const caravan = {
             id: 19,
             caravan: {
                 image: `${img19}`,
-                name: "Caravan 19",
+                name: "Newmar Corporation",
                 price: "45,000,000",
                 company: "제일모빌",
                 rating: "6.3",
@@ -279,7 +279,7 @@ export const caravan = {
             id: 20,
             caravan: {
                 image: `${img20}`,
-                name: "Caravan 20",
+                name: "Carado",
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "9.5",
@@ -292,7 +292,7 @@ export const caravan = {
             id: 21,
             caravan: {
                 image: `${img21}`,
-                name: "Caravan 21",
+                name: "Winnebago Industries",
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "1.5",
@@ -305,7 +305,7 @@ export const caravan = {
             id: 22,
             caravan: {
                 image: `${img22}`,
-                name: "Caravan 22",
+                name: "Chinook",
                 price: "74,500,000",
                 company: "다온티앤티",
                 rating: "7,6",
@@ -318,7 +318,7 @@ export const caravan = {
             id: 23,
             caravan: {
                 image: `${img23}`,
-                name: "Caravan 23",
+                name: "Adria",
                 price: "12,000,000",
                 company: "영남캠핑카",
                 rating: "1.5",
@@ -331,7 +331,7 @@ export const caravan = {
             id: 24,
             caravan: {
                 image: `${img24}`,
-                name: "Caravan 24",
+                name: "Hymer",
                 price: "45,000,000",
                 company: "제일모빌",
                 rating: "6.3",
@@ -344,7 +344,7 @@ export const caravan = {
             id: 25,
             caravan: {
                 image: `${img25}`,
-                name: "Caravan 25",
+                name: "Dethleffs",
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "9.5",
@@ -357,7 +357,7 @@ export const caravan = {
             id: 26,
             caravan: {
                 image: `${img26}`,
-                name: "Caravan 26",
+                name: "Benimar",
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "1.5",

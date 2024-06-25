@@ -2,6 +2,7 @@ import React from "react";
 import {
     CarinfoTabsContainer,
     ItemReviewBoxContainer,
+    ItemReviewContainer,
     ItemReviewImgs,
     ItemReviewInfoTextLeft,
     ItemReviewItems,
@@ -26,7 +27,7 @@ const ItemReview = () => {
     return (
         <div>
             <CarinfoTabsContainer >
-                <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
+                <ItemReviewContainer>
                     <ItemReviewTop>
                         <MotorLeftTopLeftText>
                             <MotorItemNumbers>Premium Review</MotorItemNumbers>
@@ -74,7 +75,7 @@ const ItemReview = () => {
                             </ItemReviewBoxContainer>
                         );
                     })}
-                </div>
+                </ItemReviewContainer>
             </CarinfoTabsContainer>
         </div>
     );

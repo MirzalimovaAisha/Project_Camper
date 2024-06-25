@@ -13,7 +13,7 @@ body {
     background: #fafafa;
 }
 
-input:focus {
+input:focus {  
     outline: none;
 }
 
@@ -87,6 +87,7 @@ input:focus {
     border-radius: 50%; /* 버튼 모서리를 둥글게 */
     width: 40px; /* 버튼 너비 */
     height: 40px;
+    z-index: 1 !important;
 }
 
 

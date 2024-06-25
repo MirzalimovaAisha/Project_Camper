@@ -1,28 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import {
-  BlueButton,
   CarMenuContainer,
-  MotorBrand,
-  MotorImgs,
-  MotorItemImg,
-  MotorItemTexts,
-  MotorItems,
   MotorLeftLine,
   MotorLeftTopLeftRight,
   MotorLeftTopLeftText,
-  MotorName,
-  MotorRating,
-  MotorRightBox,
-  MotorsButtons,
   MotorsContainer,
-  MotorsCost,
   MotorsLeftContainer,
   MotorsRightContainer,
   MotorsRightContainerTop,
 } from "../../../style/style";
 import { Imgwrapper } from "../../../style/navbarStyle";
-import star from "../../../assets/star.svg";
-import { Link } from "react-router-dom";
 import { MotorsLeftTextInput } from "../../../style/style";
 import { MotorsLeftTextInputContainer } from "../../../style/style";
 import { MotorsLeftCheckInputContainer } from "../../../style/style";
@@ -53,10 +40,19 @@ import AccordionGroup from "@mui/joy/AccordionGroup";
 import AccordionSummary from "@mui/joy/AccordionSummary";
 import { caravan } from "../../data/caravan";
 import CaravanHeader from "../../header/caravanHeader";
+import GridMenu from "./gridMenu";
+import VMenu from "./vMenu";
 
 const CaravanComponent = () => {
-
   const data = caravan.maindata;
+
+  const [active, setActive] = useState(true);
+  function handleGridMenu() {
+    setActive(true);
+  }
+  function handleVMenu() {
+    setActive(false);
+  }
 
   return (
     <div>
@@ -271,10 +267,10 @@ const CaravanComponent = () => {
               <MotorLeftTopLeftRight>
                 <MotorLeftInputImgs>
                   <MotorLeftImgs>
-                    <Imgwrapper src={fourDots} />
+                    <Imgwrapper src={fourDots} onClick={handleGridMenu}/>
                   </MotorLeftImgs>
                   <MotorLeftImgs $right>
-                    <Imgwrapper src={roundView} />
+                    <Imgwrapper src={roundView} onClick={handleVMenu}/>
                   </MotorLeftImgs>
                 </MotorLeftInputImgs>
               </MotorLeftTopLeftRight>
@@ -299,43 +295,16 @@ const CaravanComponent = () => {
 
               <MotorLeftInputImgs $desktop>
                 <MotorLeftImgs>
-                  <Imgwrapper src={fourDots} />
+                  <Imgwrapper src={fourDots} onClick={handleGridMenu}/>
                 </MotorLeftImgs>
                 <MotorLeftImgs $right>
-                  <Imgwrapper src={roundView} />
+                  <Imgwrapper src={roundView} onClick={handleVMenu}/>
                 </MotorLeftImgs>
               </MotorLeftInputImgs>
             </MotorLeftTopRight>
           </MotorsRightContainerTop>
 
-          <MotorRightBox>
-            {data.map((value) => {
-              return (
-                <Link to={`/caravan/${value.id}`}>
-                  <MotorItems key={value.id}>
-                    <MotorItemImg>
-                      <MotorImgs src={value.caravan.image} />
-                    </MotorItemImg>
-                    <MotorItemTexts>
-                      <MotorName>{value.caravan.name}</MotorName>
-                      <MotorBrand>
-                        <div>{value.caravan.company}</div>
-                        <MotorRating>
-                          <Imgwrapper src={star} />
-                          <div>{value.caravan.rating}</div>
-                        </MotorRating>
-                      </MotorBrand>
-                      <MotorsCost>{value.caravan.price}￦</MotorsCost>
-                      <MotorsButtons>
-                        <BlueButton $blue>Order</BlueButton>
-                        <BlueButton>Compare</BlueButton>
-                      </MotorsButtons>
-                    </MotorItemTexts>
-                  </MotorItems>
-                </Link>
-              );
-            })}
-          </MotorRightBox>
+          {active ? <GridMenu /> : <VMenu />}
         </MotorsRightContainer>
       </MotorsContainer>
     </div>

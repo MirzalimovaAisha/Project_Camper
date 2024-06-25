@@ -159,13 +159,16 @@ export const MotorItemImg = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
+    height: 100%;
+    align-items: center;
+    padding-left: ${(props)=> props.$vMenu ? "18px" : ""};
 `;
 export const MotorItemTexts = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    padding: ${(props)=> props.$vMenu ? "30px" : ""};
+    padding: ${(props)=> props.$vMenu ? "30px 30px 30px 21px" : ""};
     @media only screen and (max-width: 700px) {
         padding: ${(props)=> props.$vMenu ? "20px" : ""};
     }
@@ -479,6 +482,7 @@ export const MotorLeftLine = styled.div`
     margin-bottom: 25px;
 `;
 export const CarinfoTabsContainer = styled.div`
+    width: 100%;
     display: flex;
     justify-content: center;
     background: ${(props) => (props.$tabItem ? "#006DAB33" : "")};
@@ -493,12 +497,12 @@ export const CarinfoTabsContainer = styled.div`
 export const ItemReviewTop = styled.div`
     display: flex;
     justify-content: space-between;
-    width: ${(props) => (props.$map ? "" : "1250px")};
+    width: ${(props) => (props.$map ? "" : "100%")};
     @media only screen and (max-width: 1339px) {
-        width: ${(props) => (props.$map ? "" : "700px")};
+        /* width: ${(props) => (props.$map ? "" : "700px")}; */
     }
     @media only screen and (max-width: 700px) {
-        width: ${(props) => (props.$map ? "" : "400px")};
+        width: ${(props) => (props.$map ? "" : "100%")};
         flex-direction: ${(props) => (props.$map ? "column" : "")};
         align-items: ${(props) => (props.$map ? "center" : "")};
     }
@@ -506,23 +510,23 @@ export const ItemReviewTop = styled.div`
 export const ItemReviewBoxContainer = styled.div`
     margin-top: 30px;
     display: ${(props) => (props.$itemReview ? "" : "flex")};
-    width: ${(props) => (props.$itemReview ? "" : "1226px")};
+    width: ${(props) => (props.$itemReview ? "100%" : "1226px")};
     justify-content: space-between;
     @media only screen and (max-width: 1339px) {
-        width: ${(props) => (props.$itemReview ? "" : "674px")};
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 63px;
     }
     @media only screen and (max-width: 700px) {
-        width: 354px;
+        width: ${(props)=> props.$itemReview ? "354px" : "100%"};
     }
 `;
 export const ItemReviewItems = styled.div`
     border-bottom: 1px solid #37373726;
     padding-bottom: ${(props) => (props.$campingPlace ? "10px" : "20px")};
-    width: ${(props) => (props.$qaTab ? "707px" : "")};
+    width: ${(props) => (props.$qaTab ? "707px" : "100%")};
     display: ${(props) => (props.$qaTab ? "" : "flex")};
     justify-content: ${(props) => (props.$qaTab ? "" : "space-between")};
     padding: ${(props) => (props.$qaTab ? "0px 0px 10px 20px" : "")};
@@ -556,9 +560,9 @@ export const ItemReviewInfoTextLeft = styled.div`
     color: ${(props) => (props.$company ? "#373737CC" : "#373737")};
     font-size: ${(props) => (props.$company ? "16px" : "18px")};
     margin-top: ${(props) => (props.$text ? "16px" : "")};
-    @media only screen and (max-width: 1339px) {
+    /* @media only screen and (max-width: 1339px) {
         width: ${(props) => (props.$text ? "342px" : "")};
-    }
+    } */
 `;
 export const ItemReviewRight = styled.div`
     display: flex;
@@ -582,6 +586,7 @@ export const ItemReviewRightTexts = styled.div`
 export const ItemReviewRightNumbers = styled.div`
     color: #373737;
     margin-left: 10px;
+    width: max-content;
 `;
 export const QuestionText = styled.div`
     color: ${(props) => (props.$name ? "#37373780" : "#373737")};
@@ -771,7 +776,7 @@ export const SectionTitle = styled.div`
     font-size: 28px;
     font-family: Gilroy;
     border-bottom: 3px solid #ff7a00;
-    padding-bottom: 4px;
+    padding: 0px 10px 4px;
     margin-bottom: 40px;
 `;
 export const MainCarousel = styled.div`
@@ -1128,4 +1133,30 @@ export const VmenuCost = styled.div`
     font-size: 22px;
     font-weight: 700;
     color: #006DAB;
+`
+export const ItemReviewContainer = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1250px;
+    @media only screen and (max-width: 1245px){
+        padding: 0px 40px;
+    }
+    @media only screen and (max-width: 700px){
+        padding: 0px 20px;
+    }
+`
+
+export const CartContainer = styled.div`
+    display: flex;
+    flex-direction: ${(props)=> props.$container ? "column" : ""};
+    align-items: ${(props)=> props.$container ? "center" : ""};
+    justify-content: center;
+    margin-top: ${(props) => props.$container ? "40px" : ""};
+    gap: ${(props)=> props.$container ? "" : "45px"};
+`
+
+export const CartImgContainer = styled.div`
+    width: 811px;
+    height: 476px;
 `
