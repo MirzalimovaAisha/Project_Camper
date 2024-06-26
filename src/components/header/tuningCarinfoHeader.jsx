@@ -1,27 +1,29 @@
 import React from "react";
 import {
-    CarinfoButton,
-    CarinfoButtons,
-    CarinfoHeaderContainer,
-    CarinfoName,
-    CarinfoTexts,
+  CarinfoButton,
+  CarinfoButtons,
+  CarinfoHeaderContainer,
+  CarinfoName,
+  CarinfoTexts,
 } from "../../style/headerStyle";
-import { useParams } from "react-router-dom";
-import { usedCar } from "../data/usedCar";
+import { Link, useParams } from "react-router-dom";
+import { tuning } from "../data/tuning";
 
 const TuningCarinfoHeader = () => {
-    const data = usedCar.maindata;
-    let {id} = useParams();
-    const filterData = data.filter((value)=> value.id == id)
+  const data = tuning.maindata;
+  let { id } = useParams();
+  const filterData = data.filter((value) => value.id == id);
   return (
     <div>
       <CarinfoHeaderContainer>
         {filterData.map((value) => {
           return (
             <CarinfoTexts key={value.id}>
-              <CarinfoName>{value.used.name}</CarinfoName>
+              <CarinfoName>{value.tuning.name}</CarinfoName>
               <CarinfoButtons>
-                <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                <Link to={`/tuningCart/${value.id}`}>
+                  <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                </Link>
                 <CarinfoButton $white>COMPARE</CarinfoButton>
               </CarinfoButtons>
             </CarinfoTexts>

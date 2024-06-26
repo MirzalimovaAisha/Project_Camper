@@ -7,12 +7,12 @@ import {
   CarinfoTexts,
 } from "../../style/headerStyle";
 import { usedCar } from "../data/usedCar";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const UsedCarCarinfoHeader = () => {
-    const data = usedCar.maindata;
-    let {id} = useParams();
-    const filterData = data.filter((value)=> value.id == id)
+  const data = usedCar.maindata;
+  let { id } = useParams();
+  const filterData = data.filter((value) => value.id == id);
   return (
     <div>
       <CarinfoHeaderContainer>
@@ -21,7 +21,9 @@ const UsedCarCarinfoHeader = () => {
             <CarinfoTexts key={value.id}>
               <CarinfoName>{value.used.name}</CarinfoName>
               <CarinfoButtons>
-                <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                <Link to={`/used-carCart/${value.id}`}>
+                  <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                </Link>
                 <CarinfoButton $white>COMPARE</CarinfoButton>
               </CarinfoButtons>
             </CarinfoTexts>

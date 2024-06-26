@@ -7,7 +7,7 @@ import {
   CarinfoTexts,
 } from "../../style/headerStyle";
 import { campcar } from "../data/mockdata";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const CarinfoHeader = () => {
   const data = campcar.maindata;
@@ -21,7 +21,9 @@ const CarinfoHeader = () => {
             <CarinfoTexts key={value.id}>
               <CarinfoName>{value.car.name}</CarinfoName>
               <CarinfoButtons>
-                <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                <Link to={`/MotorCart/${value.id}`}>
+                  <CarinfoButton $blue>ADD TO CART</CarinfoButton>
+                </Link>
                 <CarinfoButton $white>COMPARE</CarinfoButton>
               </CarinfoButtons>
             </CarinfoTexts>

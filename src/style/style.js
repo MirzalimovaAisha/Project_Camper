@@ -774,7 +774,7 @@ export const SectionTitle = styled.div`
     color: #373737;
     font-weight: 700;
     font-size: 28px;
-    font-family: Gilroy;
+    /* font-family: Gilroy; */
     border-bottom: 3px solid #ff7a00;
     padding: 0px 10px 4px;
     margin-bottom: 40px;
@@ -840,6 +840,7 @@ export const LoginInput = styled.input`
     margin: ${(props)=> props.$last ? "10px 0px 15px 0px" : "10px 0px 20px 0px" };
     font-size: 15px;
     font-family: "Open Sans";
+    color: #37373799;
     &:focus {
         outline: none;
     }
@@ -1154,9 +1155,120 @@ export const CartContainer = styled.div`
     justify-content: center;
     margin-top: ${(props) => props.$container ? "40px" : ""};
     gap: ${(props)=> props.$container ? "" : "45px"};
-`
+    @media only screen and (max-width: 1245px){
+        flex-direction: column;
+        align-items: center;
+    }
+    `
 
 export const CartImgContainer = styled.div`
     width: 811px;
     height: 476px;
+    position: relative;
+    @media only screen and (max-width: 817px){
+        width: 600px;
+        height: 350px;
+    }
+    @media only screen and (max-width: 700px){
+        width: 354px;
+        height: 258px;
+    }
+`
+export const CartPurchase =styled.div`
+    height: 50px;
+    width: 350px;
+    border-radius: 10px;
+    background: rgba(55, 55, 55, 0.10);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #373737;
+    div{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    p{
+        font-weight: 600;
+    }
+`
+export const CartTextContainer = styled.div`
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    width: 311px;
+    overflow-y: scroll;
+    height: 600px;
+    ::-webkit-scrollbar {
+        width: 0; 
+        height: 0; 
+    }
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    @media only screen and (max-width: 1245px){
+        overflow-y: visible;
+        height: auto;
+        width:678px;
+    }
+    @media only screen and (max-width: 700px){
+        width:100%;
+        padding: 0px 30px;
+    }
+`
+export const CartTextItems = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+export const CartTitleText = styled.div`
+    color: ${(props)=>props.$cartName ? "#373737" : "#000"};
+    font-weight: 600;
+    font-size: ${(props)=> props.$cartName ? "30px" : "25px"};
+    margin-bottom: ${(props)=> props.$cartName ? "12px" : "30px"};
+    margin-top: ${(props)=> props.$cartName ? "" : "42px"};
+`
+export const CartNameText = styled.div`
+    margin-top: ${(props)=> props.$firstText ? "20px" : "11px"};
+    color: ${(props)=> props.$firstText ? "#373737" : "#373737B2"};
+    font-size: ${(props)=> props.$firstText ? "17px" : "15px"};
+    font-weight: 500;
+`
+
+export const CartButton = styled.button`
+    width: 100%;
+    margin-top: ${(props)=> props.$continue ? "171px" : "40px"};
+    padding: 10px;
+    border-radius: 10px;
+    background: #006DAB;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.1s;
+    &:hover{
+        background: #005280;
+    }
+    @media only screen and (max-width: 1245px){
+        margin-top: ${(props)=> props.$continue ? "30px" : "40px"};
+    }
+`
+
+export const InputSelect = styled.select`
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0px 20px ;
+    border-radius: 10px;
+    background: rgba(55, 55, 55, 0.10);
+    border: none;
+    cursor: pointer;
+`
+
+export const CartNameContainer = styled.div`
+    @media only screen and (max-width: 1245px){
+        display: flex;
+        justify-content: space-between;
+    }
 `

@@ -90,8 +90,6 @@ input:focus {
     z-index: 1 !important;
 }
 
-
-
 .custom-carousel .react-multi-carousel-item {
     display: flex;
     justify-content: center;
@@ -109,4 +107,55 @@ input:focus {
 }
 
 
+.cartSwiper .swiper-button-next,
+.cartSwiper .swiper-button-prev{
+    background: #006DAB;
+}
 
+/* .swiperImg{
+    height: 456px;
+} */
+.swiper-zoom-container img{
+    width: 683px !important;
+    height: 406px !important;
+    object-fit: cover !important;
+    top: 0;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 817px){
+    .swiper-zoom-container img{
+        width: 480px !important;
+        height: 280px !important;
+    }
+
+}
+@media only screen and (max-width: 700px){
+    .swiper-zoom-container img{
+        width: 334px !important;
+        height: 199px !important;
+        margin-top: 10px;
+    }
+    .cartSwiper .swiper-button-next,
+    .cartSwiper .swiper-button-prev{
+        display: none;
+    }
+
+}
+.swiper-zoom-container{
+    height: 100%;
+    position: relative;
+}
+.cartSwiper .swiper-pagination-fraction,
+.cartSwiper .swiper-pagination-custom,
+.cartSwiper .swiper-pagination-bullets,
+.cartSwiper .swiper-pagination-horizontal {
+    display: none;
+}
+
+.cartSwiper .swiper-button-next {
+    right: -14px; 
+}
+  
+.cartSwiper .swiper-button-prev {
+   left: -14px; 
+}

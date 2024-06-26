@@ -16,6 +16,10 @@ import MainComponent from "./components/pages/home/main";
 import Registrate from "./others/Registrate";
 import ScrollToTop from "./scrollToTop";
 import CartComponent from "./cart/cart";
+import MotorCartCompontent from "./cart/motorCart";
+import CaravanCartComponent from "./cart/caravanCart";
+import TuningCartComponent from "./cart/tuningCart";
+import UsedCarCartComponent from "./cart/usedCarCart";
 
 const RouterComponent = () => {
     const location = useLocation();
@@ -48,6 +52,11 @@ const RouterComponent = () => {
                 />
                 <Route path="/registrate" element={<Registrate />} />
                 <Route path="/cart" element={<CartComponent />} />
+
+                <Route path="/MotorCart/:id" element={<MotorCartCompontent />} />
+                <Route path="/caravanCart/:id" element={<CaravanCartComponent />} />
+                <Route path="/tuningCart/:id" element={<TuningCartComponent />} />
+                <Route path="/used-carCart/:id" element={<UsedCarCartComponent />} />
             </Routes>
 
             {hideComponent && <Footer />}
