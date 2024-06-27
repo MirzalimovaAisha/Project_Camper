@@ -228,6 +228,7 @@ export const MotorsCost = styled.div`
     font-weight: 700;
     @media only screen and (max-width: 700px) {
         font-size: ${(props) => (props.$carinfoCost ? "22px" : "")};
+        font-size: ${(props) => (props.$cart ? "30px" : "")};
     }
 `;
 export const MotorsButtons = styled.div`
@@ -1226,6 +1227,9 @@ export const CartTitleText = styled.div`
     font-size: ${(props)=> props.$cartName ? "30px" : "25px"};
     margin-bottom: ${(props)=> props.$cartName ? "12px" : "30px"};
     margin-top: ${(props)=> props.$cartName ? "" : "42px"};
+    @media only screen and (max-width: 1245px){
+        margin-bottom: ${(props)=> props.$cartName ? "0" : "30px"};
+    }
 `
 export const CartNameText = styled.div`
     margin-top: ${(props)=> props.$firstText ? "20px" : "11px"};

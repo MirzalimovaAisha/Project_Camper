@@ -19,7 +19,7 @@ import CartComponent from "./cart/cart";
 import MotorCartCompontent from "./cart/motorCart";
 import CaravanCartComponent from "./cart/caravanCart";
 import TuningCartComponent from "./cart/tuningCart";
-import UsedCarCartComponent from "./cart/usedCarCart";
+import UsedCarCartComponent from "./cart/usedCar";
 
 const RouterComponent = () => {
     const location = useLocation();
@@ -56,7 +56,7 @@ const RouterComponent = () => {
                 <Route path="/MotorCart/:id" element={<MotorCartCompontent />} />
                 <Route path="/caravanCart/:id" element={<CaravanCartComponent />} />
                 <Route path="/tuningCart/:id" element={<TuningCartComponent />} />
-                <Route path="/used-carCart/:id" element={<UsedCarCartComponent />} />
+                <Route path="/used-car/cart/:id" element={<UsedCarCartComponent />} />
             </Routes>
 
             {hideComponent && <Footer />}

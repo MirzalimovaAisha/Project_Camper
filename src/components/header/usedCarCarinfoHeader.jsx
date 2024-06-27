@@ -21,7 +21,7 @@ const UsedCarCarinfoHeader = () => {
             <CarinfoTexts key={value.id}>
               <CarinfoName>{value.used.name}</CarinfoName>
               <CarinfoButtons>
-                <Link to={`/used-carCart/${value.id}`}>
+                <Link to={`/used-car/cart/${value.id}`}>
                   <CarinfoButton $blue>ADD TO CART</CarinfoButton>
                 </Link>
                 <CarinfoButton $white>COMPARE</CarinfoButton>
