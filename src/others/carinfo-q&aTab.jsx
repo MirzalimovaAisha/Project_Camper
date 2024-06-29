@@ -1,14 +1,12 @@
 import React from "react";
 import {
-  BlueButton,
-  CarinfoInput,
-  CarinfoInputs,
-  CarinfoTabSend,
   CarinfoTabsContainer,
   ItemReviewBoxContainer,
   ItemReviewItems,
   QuestionText,
 } from "../style/style";
+import { ContactUs } from "./email";
+// import { ContactUs } from "./email";
 
 const Q_ATab = () => {
   return (
@@ -38,15 +36,7 @@ const Q_ATab = () => {
             </ItemReviewItems>
           </div>
 
-          <CarinfoTabSend>
-            <div>Send a question</div>
-            <CarinfoInputs>
-              <CarinfoInput placeholder="Your name" />
-              <CarinfoInput placeholder="Your email" />
-              <CarinfoInput $big placeholder="Your question" />
-            </CarinfoInputs>
-            <BlueButton $sendButton>Send question</BlueButton>
-          </CarinfoTabSend>
+          <ContactUs />
         </ItemReviewBoxContainer>
       </CarinfoTabsContainer>
     </div>

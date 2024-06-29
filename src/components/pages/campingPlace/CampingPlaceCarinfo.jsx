@@ -11,6 +11,7 @@ import {
     CampingPlaceImgs,
     CampingPlaceItem,
     CampingPlaceMap,
+    CarinfoContactMap,
     CarinfoInfoName,
     ItemReviewItems,
     MotorItemImg,
@@ -24,6 +25,7 @@ import clock from "../../../assets/time-icon.png";
 import phone from "../../../assets/phone-icon.png";
 import home from "../../../assets/home-icon.png";
 import map from "../../../assets/map2.png";
+import CampingPlaceComponentMap from "./campingPlaceMap";
 
 const CampingPlaceCarinfo = () => {
     const data = campingPlace.maindata;
@@ -128,7 +130,8 @@ const CampingPlaceCarinfo = () => {
                                         justifyContent: "center",
                                     }}
                                 >
-                                    <CampingPlaceMap src={map} />
+                                    {/* <CampingPlaceMap src={map} /> */}
+                                    <CampingPlaceComponentMap />
                                 </div>
                             </CampingPlaceCarinfoContainer>
                         );

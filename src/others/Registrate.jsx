@@ -6,7 +6,6 @@ import x from "../assets/x.svg";
 
 import {
     LoginInput,
-    LoginLines,
     LoginText,
     SignInButton,
     SpaceBetweenWrapper,
@@ -29,7 +28,7 @@ const Registrate = () => {
                     >
                         <span>
                             <h2>Registrate</h2>
-                            <Link to={'/'}>
+                            <Link to={"/"}>
                                 <img src={x} alt="x" />
                             </Link>
                         </span>

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Motor from "./components/pages/motors/motor";
 import DetailsComponent from "./components/pages/motors/motorInfo";
 import Navbar from "./components/navbar/navbar";
@@ -17,18 +17,22 @@ import Registrate from "./others/Registrate";
 import ScrollToTop from "./scrollToTop";
 import CartComponent from "./cart/cart";
 import MotorCartCompontent from "./cart/motorCart";
+// import CaravanCartComponent from "./cart/caravanCart";
 import CaravanCartComponent from "./cart/caravanCart";
 import TuningCartComponent from "./cart/tuningCart";
 import UsedCarCartComponent from "./cart/usedCar";
 
 const RouterComponent = () => {
     const location = useLocation();
-    const hideComponent = location.pathname !== "/registrate";
+    const showNavbar = location.pathname !== "/registrate";
+    const showFooter =
+        location.pathname !== "/registrate" && location.pathname !== "/cart";
+
     return (
         <div>
-            {hideComponent && <Navbar />}
+            {showNavbar && <Navbar />}
             <ScrollToTop />
-            
+
             <Routes>
                 <Route path="/" element={<MainComponent />} />
                 <Route path="/motor" element={<Motor />} />
@@ -52,14 +56,25 @@ const RouterComponent = () => {
                 />
                 <Route path="/registrate" element={<Registrate />} />
                 <Route path="/cart" element={<CartComponent />} />
-
-                <Route path="/MotorCart/:id" element={<MotorCartCompontent />} />
-                <Route path="/caravanCart/:id" element={<CaravanCartComponent />} />
-                <Route path="/tuningCart/:id" element={<TuningCartComponent />} />
-                <Route path="/used-car/cart/:id" element={<UsedCarCartComponent />} />
+                <Route
+                    path="/MotorCart/:id"
+                    element={<MotorCartCompontent />}
+                />
+                <Route
+                    path="/caravanCart/:id"
+                    element={<CaravanCartComponent />}
+                />
+                <Route
+                    path="/tuningCart/:id"
+                    element={<TuningCartComponent />}
+                />
+                <Route
+                    path="/used-car/cart/:id"
+                    element={<UsedCarCartComponent />}
+                />
             </Routes>
 
-            {hideComponent && <Footer />}
+            {showFooter && <Footer />}
         </div>
     );
 };

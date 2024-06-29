@@ -5,10 +5,10 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import { CarinfoTabsContainer } from "../style/style";
+import CarinfoContactTab from "./carinfoContactTab";
 import ItemReview from "./ItemReview";
 import Q_ATab from "./carinfo-q&aTab";
 import CarinfoFaqTab from "./carninfoFaqTab";
-import CarinfoContactTab from "./carinfoContactTab";
 
 export default function CarinfoItemTabs() {
     const [value, setValue] = React.useState(0);
@@ -22,7 +22,7 @@ export default function CarinfoItemTabs() {
             backgroundColor: "#006DAB",
             color: "#FFFFFF",
         },
-        textTransform: "none"
+        textTransform: "none",
     }));
 
     const TabPanel = (props) => {
@@ -46,7 +46,7 @@ export default function CarinfoItemTabs() {
     };
 
     return (
-        <Box sx={{ width: "100%",display:"flex", flexDirection:"column" }}>
+        <Box sx={{ width: "100%", display: "flex", flexDirection: "column" }}>
             <CarinfoTabsContainer $tabItem>
                 <Tabs
                     value={value}
@@ -63,7 +63,7 @@ export default function CarinfoItemTabs() {
                             padding: "15px 25px",
                             fontWeight: "500",
                             fontFamily: "Montserrat",
-                            color:"#373737"
+                            color: "#373737",
                         }}
                     />
                     <CustomTab

@@ -746,11 +746,16 @@ export const CampinInformation = styled.div`
     gap: 11px;
     align-items: center;
 `;
-export const CampingPlaceMap = styled.img`
+export const CampingPlaceMap = styled.div`
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1226px;
+    height: 552px;
+    @media only screen and (max-width: 1245px) {
+        /* width: 674px; */
+        width: 100%;
+    }
 `;
 
 export const CampingPlaceImgs = styled.div`
@@ -1241,6 +1246,7 @@ export const CartNameText = styled.div`
 export const CartButton = styled.button`
     width: 100%;
     margin-top: ${(props)=> props.$continue ? "171px" : "40px"};
+    margin-bottom: ${(props)=> props.$continue ? "" : "150px"};
     padding: 10px;
     border-radius: 10px;
     background: #006DAB;

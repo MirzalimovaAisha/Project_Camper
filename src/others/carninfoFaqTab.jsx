@@ -1,10 +1,6 @@
 import React from "react";
 import {
   AccordionContainer,
-  BlueButton,
-  CarinfoInput,
-  CarinfoInputs,
-  CarinfoTabSend,
   CarinfoTabsContainer,
   ItemReviewBoxContainer,
 } from "../style/style";
@@ -14,6 +10,8 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { ContactUs } from "./email";
+// import { ContactUs } from "./email";
 
 const CarinfoFaqTab = () => {
   return (
@@ -216,15 +214,7 @@ const CarinfoFaqTab = () => {
               </Accordion>
             </AccordionContainer>
 
-            <CarinfoTabSend>
-              <div>Have you got a question</div>
-              <CarinfoInputs>
-                <CarinfoInput placeholder="Your name" />
-                <CarinfoInput placeholder="Your email" />
-                <CarinfoInput $big placeholder="Your question" />
-              </CarinfoInputs>
-              <BlueButton $sendButton>Send question</BlueButton>
-            </CarinfoTabSend>
+            <ContactUs />
           </ItemReviewBoxContainer>
         </CarinfoTabsContainer>
       </div>

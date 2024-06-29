@@ -1,29 +1,16 @@
 import React, { useState } from "react";
 import {
-    BlueButton,
     CarMenuContainer,
-    MotorBrand,
-    MotorImgs,
-    MotorItemImg,
-    MotorItemTexts,
-    MotorItems,
     MotorLeftLine,
     MotorLeftTopLeftRight,
     MotorLeftTopLeftText,
-    MotorName,
-    MotorRating,
-    MotorRightBox,
-    MotorsButtons,
     MotorsContainer,
-    MotorsCost,
     MotorsLeftContainer,
     MotorsRightContainer,
     MotorsRightContainerTop,
 } from "../../../style/style";
 import { campcar } from "../../data/mockdata";
 import { Imgwrapper } from "../../../style/navbarStyle";
-import star from "../../../assets/star.svg";
-import { Link } from "react-router-dom";
 import { MotorsLeftTextInput } from "../../../style/style";
 import { MotorsLeftTextInputContainer } from "../../../style/style";
 import { MotorsLeftCheckInputContainer } from "../../../style/style";

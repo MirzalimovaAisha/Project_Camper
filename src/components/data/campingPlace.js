@@ -1,23 +1,22 @@
-import campingPlace1 from "../../assets/camping-place-1.jpg"
-import campingPlace2 from "../../assets/camping-place-2.jpg"
-import campingPlace3 from "../../assets/camping-place-3.jpg"
-import campingPlace4 from "../../assets/camping-place-4.jpg"
-import campingPlace5 from "../../assets/camping-place-5.jpg"
-import campingPlace6 from "../../assets/camping-place-6.jpg"
-import campingPlace7 from "../../assets/camping-place-7.webp"
-import campingPlace8 from "../../assets/camping-place-8.jpg"
-import campingPlace9 from "../../assets/camping-place-9.jpg"
-import campingPlace10 from "../../assets/camping-place-10.webp"
-import campingPlace11 from "../../assets/camping-place-11.webp"
-import campingPlace12 from "../../assets/camping-place-12.jpg"
-import campingPlace13 from "../../assets/camping-place-13.jpg"
-import campingPlace14 from "../../assets/camping-place-14.webp"
-import campingPlace15 from "../../assets/camping-place-15.webp"
-import campingPlace16 from "../../assets/camping-place-16.webp"
-import campingPlace17 from "../../assets/camping-place-17.jpg"
-import campingPlace18 from "../../assets/camping-place-18.jpg"
-import campingPlace19 from "../../assets/camping-place-19.webp"
-
+import campingPlace1 from "../../assets/camping-place-1.jpg";
+import campingPlace2 from "../../assets/camping-place-2.jpg";
+import campingPlace3 from "../../assets/camping-place-3.jpg";
+import campingPlace4 from "../../assets/camping-place-4.jpg";
+import campingPlace5 from "../../assets/camping-place-5.jpg";
+import campingPlace6 from "../../assets/camping-place-6.jpg";
+import campingPlace7 from "../../assets/camping-place-7.webp";
+import campingPlace8 from "../../assets/camping-place-8.jpg";
+import campingPlace9 from "../../assets/camping-place-9.jpg";
+import campingPlace10 from "../../assets/camping-place-10.webp";
+import campingPlace11 from "../../assets/camping-place-11.webp";
+import campingPlace12 from "../../assets/camping-place-12.jpg";
+import campingPlace13 from "../../assets/camping-place-13.jpg";
+import campingPlace14 from "../../assets/camping-place-14.webp";
+import campingPlace15 from "../../assets/camping-place-15.webp";
+import campingPlace16 from "../../assets/camping-place-16.webp";
+import campingPlace17 from "../../assets/camping-place-17.jpg";
+import campingPlace18 from "../../assets/camping-place-18.jpg";
+import campingPlace19 from "../../assets/camping-place-19.webp";
 
 export const campingPlace = {
     maindata: [
@@ -31,12 +30,16 @@ export const campingPlace = {
                 phone_number: "010-1234-5678",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-                
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.5706",
+                    longitude: "126.8826",
+                },
+            },
         },
         {
             id: 2,
@@ -48,12 +51,16 @@ export const campingPlace = {
                 phone_number: "010-5835-2795",
                 working_hour: {
                     from: "10:00",
-                    to: "16:00"
+                    to: "16:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-                
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.4351",
+                    longitude: "127.0197",
+                },
+            },
         },
         {
             id: 3,
@@ -65,14 +72,19 @@ export const campingPlace = {
                 phone_number: "010-6924-5689",
                 working_hour: {
                     from: "8:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
-            id: 4, 
+            id: 4,
             campingPlace: {
                 name: "Jungnang Forest Campsite",
                 location: "Mangu-ro 87-gil",
@@ -81,12 +93,16 @@ export const campingPlace = {
                 phone_number: "010-4582-5891",
                 working_hour: {
                     from: "9:00",
-                    to: "18:00"
+                    to: "18:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-                
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 5,
@@ -98,12 +114,16 @@ export const campingPlace = {
                 phone_number: "010-7838-4829",
                 working_hour: {
                     from: "10:30",
-                    to: "23:00"
+                    to: "23:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-                
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 6,
@@ -115,12 +135,16 @@ export const campingPlace = {
                 phone_number: "010-1111-2222",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-                
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 7,
@@ -132,11 +156,16 @@ export const campingPlace = {
                 phone_number: "010-3333-4444",
                 working_hour: {
                     from: "12:00",
-                    to: "20:30"
+                    to: "20:30",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 8,
@@ -148,11 +177,16 @@ export const campingPlace = {
                 phone_number: "010-7932-2941",
                 working_hour: {
                     from: "9:00",
-                    to: "21:00"
+                    to: "21:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 9,
@@ -164,11 +198,16 @@ export const campingPlace = {
                 phone_number: "010-3300-4393",
                 working_hour: {
                     from: "13:00",
-                    to: "23:00"
+                    to: "23:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 10,
@@ -180,11 +219,16 @@ export const campingPlace = {
                 phone_number: "44-20-7123-4567",
                 working_hour: {
                     from: "9:00",
-                    to: "19:00"
+                    to: "19:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 11,
@@ -196,11 +240,16 @@ export const campingPlace = {
                 phone_number: "44-20-5934-5981",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 12,
@@ -212,11 +261,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 13,
@@ -228,11 +282,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 14,
@@ -244,11 +303,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 15,
@@ -260,11 +324,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 16,
@@ -276,11 +345,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 17,
@@ -292,11 +366,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 18,
@@ -308,11 +387,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
         {
             id: 19,
@@ -324,11 +408,16 @@ export const campingPlace = {
                 phone_number: "010-5783-9384",
                 working_hour: {
                     from: "11:00",
-                    to: "20:00"
+                    to: "20:00",
                 },
                 home_page: "camping.com",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
-            }
+                description:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero placerat nascetur ultrices. Aenean mattis sapien a donec urna, bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.",
+                map: {
+                    latitude: "37.573207",
+                    longitude: "126.874168",
+                },
+            },
         },
-    ]
-}
+    ],
+};
