@@ -1200,12 +1200,12 @@ export const CartPurchase =styled.div`
     }
 `
 export const CartTextContainer = styled.div`
-    margin-top: 17px;
+    /* margin-top: 17px;/ */
     display: flex;
     flex-direction: column;
     width: 311px;
     overflow-y: scroll;
-    height: 600px;
+    height: 476px;
     ::-webkit-scrollbar {
         width: 0; 
         height: 0; 
@@ -1246,7 +1246,6 @@ export const CartNameText = styled.div`
 export const CartButton = styled.button`
     width: 100%;
     margin-top: ${(props)=> props.$continue ? "171px" : "40px"};
-    margin-bottom: ${(props)=> props.$continue ? "" : "150px"};
     padding: 10px;
     border-radius: 10px;
     background: #006DAB;
