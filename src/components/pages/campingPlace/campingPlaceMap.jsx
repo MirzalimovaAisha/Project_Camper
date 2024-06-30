@@ -34,13 +34,11 @@ const CampingPlaceComponentMap = ({ map }) => {
             kakao.maps.load(() => {
                 const mapContainer = document.getElementById("map");
                 const options = {
-                    // center: new kakao.maps.LatLng(35.88419, 128.88419),
                     center: new kakao.maps.LatLng(ltd, lng),
-                    level: 6,
+                    level: 4,
                 };
                 const map = new kakao.maps.Map(mapContainer, options);
 
-                // const markerPositions = [new kakao.maps.LatLng(35.88419, 128.88419)];
                 const markerPositions = [new kakao.maps.LatLng(ltd, lng)];
 
                 markerPositions.forEach((position) => {
@@ -53,7 +51,7 @@ const CampingPlaceComponentMap = ({ map }) => {
         });
     }, []);
     return (
-        <div>
+        <div style={{width:"100%"}}>
             <CampingPlaceMap id="map" className="map"></CampingPlaceMap>
         </div>
     );

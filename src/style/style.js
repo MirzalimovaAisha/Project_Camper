@@ -137,7 +137,8 @@ export const MotorRightBox = styled.div`
         justify-content: center;
     }
     @media only screen and (max-width: 819px) {
-        grid-template-columns:${(props)=> props.$campingPlace ? "repeat(1, 1fr)" : "repeat(2, 1fr)"};
+        grid-template-columns: ${(props) =>
+            props.$campingPlace ? "repeat(1, 1fr)" : "repeat(2, 1fr)"};
     }
     @media only screen and (max-width: 700px) {
         grid-template-columns: repeat(1, 1fr);
@@ -147,12 +148,12 @@ export const MotorImgs = styled.img`
     width: 200px;
     height: 121px;
     @media only screen and (max-width: 1245px) {
-        width: ${(props)=> props.$VMenu ? "200px" : "271px"};
-        height: ${(props)=> props.$VMenu ? "121px" : "177px"};
+        width: ${(props) => (props.$VMenu ? "200px" : "271px")};
+        height: ${(props) => (props.$VMenu ? "121px" : "177px")};
     }
     @media only screen and (max-width: 700px) {
-        width: ${(props)=> props.$VMenu ? "100px" : ""};
-        height: ${(props)=> props.$VMenu ? "85px" : ""};
+        width: ${(props) => (props.$VMenu ? "100px" : "")};
+        height: ${(props) => (props.$VMenu ? "85px" : "")};
     }
 `;
 export const MotorItemImg = styled.div`
@@ -161,16 +162,16 @@ export const MotorItemImg = styled.div`
     position: relative;
     height: 100%;
     align-items: center;
-    padding-left: ${(props)=> props.$vMenu ? "18px" : ""};
+    padding-left: ${(props) => (props.$vMenu ? "18px" : "")};
 `;
 export const MotorItemTexts = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    padding: ${(props)=> props.$vMenu ? "30px 30px 30px 21px" : ""};
+    padding: ${(props) => (props.$vMenu ? "30px 30px 30px 21px" : "")};
     @media only screen and (max-width: 700px) {
-        padding: ${(props)=> props.$vMenu ? "20px" : ""};
+        padding: ${(props) => (props.$vMenu ? "20px" : "")};
     }
 `;
 export const MotorItems = styled.div`
@@ -198,10 +199,10 @@ export const MotorName = styled.div`
     color: var(--text, #373737);
     font-weight: 600;
     font-size: ${(props) => (props.$campingPlace ? "22px" : "16px")};
-    margin-top: ${(props)=> props.$vMenu ? "" : "10px"};
-    margin-bottom: ${(props)=> props.$vMenu ? "" : "5px"};
+    margin-top: ${(props) => (props.$vMenu ? "" : "10px")};
+    margin-bottom: ${(props) => (props.$vMenu ? "" : "5px")};
     @media only screen and (max-width: 1245px) {
-        margin-top: ${(props)=> props.$gridMenu ? "30px" : ""};
+        margin-top: ${(props) => (props.$gridMenu ? "30px" : "")};
         font-family: ${(props) => (props.$campingPlace ? "" : "Open Sans")};
         font-size: ${(props) => (props.$campingPlace ? "22px" : "18px")};
     }
@@ -213,7 +214,7 @@ export const MotorBrand = styled.div`
     justify-content: space-between;
     align-items: center;
     font-size: ${(props) => (props.$location ? "16px" : "12px")};
-    margin-bottom: ${(props)=> props.$vMenu ? "45px" : ""};
+    margin-bottom: ${(props) => (props.$vMenu ? "45px" : "")};
 `;
 export const MotorRating = styled.div`
     display: flex;
@@ -258,7 +259,7 @@ export const BlueButton = styled.button`
 
     @media only screen and (max-width: 1245px) {
         /* height: 45px; */
-        height: ${(props)=> props.$vMenu ? "35px" : "45px"};
+        height: ${(props) => (props.$vMenu ? "35px" : "45px")};
         font-size: 16px;
         font-family: "Open Sans";
     }
@@ -338,7 +339,7 @@ export const MotorLeftDownArrow = styled.div`
     padding: 8px 7px;
 `;
 export const MotorLeftImgs = styled.div`
-    background: #FDFDFD;
+    background: #fdfdfd;
     width: 40px;
     height: 30px;
     border-radius: ${(props) =>
@@ -513,7 +514,7 @@ export const ItemReviewBoxContainer = styled.div`
     display: ${(props) => (props.$itemReview ? "" : "flex")};
     width: ${(props) => (props.$itemReview ? "100%" : "1226px")};
     justify-content: space-between;
-    @media only screen and (max-width: 1339px) {
+    @media only screen and (max-width: 1245px) {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -521,7 +522,7 @@ export const ItemReviewBoxContainer = styled.div`
         gap: 63px;
     }
     @media only screen and (max-width: 700px) {
-        width: ${(props)=> props.$itemReview ? "354px" : "100%"};
+        width: ${(props) => (props.$itemReview ? "354px" : "100%")};
     }
 `;
 export const ItemReviewItems = styled.div`
@@ -638,7 +639,9 @@ export const AccordionContainer = styled.div`
         width: 100%;
     }
 `;
-export const CarinfoContactMap = styled.img`
+export const CarinfoContactMap = styled.div`
+    width: 707px;
+    height: 298px;
     @media only screen and (max-width: 1245px) {
         width: 674px;
     }
@@ -843,7 +846,8 @@ export const LoginInput = styled.input`
     border: none;
     border-radius: 10px;
     background: #3737371a;
-    margin: ${(props)=> props.$last ? "10px 0px 15px 0px" : "10px 0px 20px 0px" };
+    margin: ${(props) =>
+        props.$last ? "10px 0px 15px 0px" : "10px 0px 20px 0px"};
     font-size: 15px;
     font-family: "Open Sans";
     color: #37373799;
@@ -1094,17 +1098,17 @@ export const RegistrateContainerItem = styled.div`
     justify-content: center;
     font-family: "Open Sans";
     z-index: 1;
-    span{
+    span {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 25px;
 
-        img{
+        img {
             cursor: pointer;
         }
     }
-`
+`;
 
 export const BlogContainer = styled.div`
     display: flex;
@@ -1115,7 +1119,7 @@ export const BlogContainer = styled.div`
         justify-content: center;
         align-items: center;
     }
-    `
+`;
 
 export const VMenuContainer = styled.div`
     display: flex;
@@ -1125,80 +1129,80 @@ export const VMenuContainer = styled.div`
     @media only screen and (max-width: 700px) {
         width: max-content;
     }
-`
+`;
 export const VMenuItems = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-`
+    background: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+`;
 
 export const VmenuCost = styled.div`
     font-size: 22px;
     font-weight: 700;
-    color: #006DAB;
-`
+    color: #006dab;
+`;
 export const ItemReviewContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 1250px;
-    @media only screen and (max-width: 1245px){
+    @media only screen and (max-width: 1245px) {
         padding: 0px 40px;
     }
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
         padding: 0px 20px;
     }
-`
+`;
 
 export const CartContainer = styled.div`
     display: flex;
-    flex-direction: ${(props)=> props.$container ? "column" : ""};
-    align-items: ${(props)=> props.$container ? "center" : ""};
+    flex-direction: ${(props) => (props.$container ? "column" : "")};
+    align-items: ${(props) => (props.$container ? "center" : "")};
     justify-content: center;
-    margin-top: ${(props) => props.$container ? "40px" : ""};
-    gap: ${(props)=> props.$container ? "" : "45px"};
-    @media only screen and (max-width: 1245px){
+    margin-top: ${(props) => (props.$container ? "40px" : "")};
+    gap: ${(props) => (props.$container ? "" : "45px")};
+    @media only screen and (max-width: 1245px) {
         flex-direction: column;
         align-items: center;
     }
-    `
+`;
 
 export const CartImgContainer = styled.div`
     width: 811px;
     height: 476px;
     position: relative;
-    @media only screen and (max-width: 817px){
+    @media only screen and (max-width: 817px) {
         width: 600px;
         height: 350px;
     }
-    @media only screen and (max-width: 700px){
+    @media only screen and (max-width: 700px) {
         width: 354px;
         height: 258px;
     }
-`
-export const CartPurchase =styled.div`
+`;
+export const CartPurchase = styled.div`
     height: 50px;
     width: 350px;
     border-radius: 10px;
-    background: rgba(55, 55, 55, 0.10);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+    background: rgba(55, 55, 55, 0.1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     color: #373737;
-    div{
+    div {
         font-weight: 500;
         font-size: 16px;
     }
-    p{
+    p {
         font-weight: 600;
     }
-`
+`;
 export const CartTextContainer = styled.div`
     /* margin-top: 17px;/ */
     display: flex;
@@ -1207,77 +1211,77 @@ export const CartTextContainer = styled.div`
     overflow-y: scroll;
     height: 476px;
     ::-webkit-scrollbar {
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
     }
     -ms-overflow-style: none;
     scrollbar-width: none;
-    @media only screen and (max-width: 1245px){
+    @media only screen and (max-width: 1245px) {
         overflow-y: visible;
         height: auto;
-        width:678px;
+        width: 678px;
     }
-    @media only screen and (max-width: 700px){
-        width:100%;
+    @media only screen and (max-width: 700px) {
+        width: 100%;
         padding: 0px 30px;
     }
-`
+`;
 export const CartTextItems = styled.div`
     display: flex;
     flex-direction: column;
-`
+`;
 export const CartTitleText = styled.div`
-    color: ${(props)=>props.$cartName ? "#373737" : "#000"};
+    color: ${(props) => (props.$cartName ? "#373737" : "#000")};
     font-weight: 600;
-    font-size: ${(props)=> props.$cartName ? "30px" : "25px"};
-    margin-bottom: ${(props)=> props.$cartName ? "12px" : "30px"};
-    margin-top: ${(props)=> props.$cartName ? "" : "42px"};
-    @media only screen and (max-width: 1245px){
-        margin-bottom: ${(props)=> props.$cartName ? "0" : "30px"};
+    font-size: ${(props) => (props.$cartName ? "30px" : "25px")};
+    margin-bottom: ${(props) => (props.$cartName ? "12px" : "30px")};
+    margin-top: ${(props) => (props.$cartName ? "" : "42px")};
+    @media only screen and (max-width: 1245px) {
+        margin-bottom: ${(props) => (props.$cartName ? "0" : "30px")};
     }
-`
+`;
 export const CartNameText = styled.div`
-    margin-top: ${(props)=> props.$firstText ? "20px" : "11px"};
-    color: ${(props)=> props.$firstText ? "#373737" : "#373737B2"};
-    font-size: ${(props)=> props.$firstText ? "17px" : "15px"};
+    margin-top: ${(props) => (props.$firstText ? "20px" : "11px")};
+    color: ${(props) => (props.$firstText ? "#373737" : "#373737B2")};
+    font-size: ${(props) => (props.$firstText ? "17px" : "15px")};
     font-weight: 500;
-`
+`;
 
 export const CartButton = styled.button`
     width: 100%;
-    margin-top: ${(props)=> props.$continue ? "171px" : "40px"};
+    margin-top: ${(props) => (props.$continue ? "171px" : "40px")};
     padding: 10px;
     border-radius: 10px;
-    background: #006DAB;
+    background: #006dab;
     border: none;
     cursor: pointer;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-    color: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    color: #fff;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     transition: all 0.1s;
-    &:hover{
+    &:hover {
         background: #005280;
     }
-    @media only screen and (max-width: 1245px){
-        margin-top: ${(props)=> props.$continue ? "30px" : "40px"};
+    @media only screen and (max-width: 1245px) {
+        margin-top: ${(props) => (props.$continue ? "30px" : "40px")};
     }
-`
+`;
 
 export const InputSelect = styled.select`
     width: 100%;
     padding: 15px 20px;
-    margin: 10px 0px 20px ;
+    margin: 10px 0px 20px;
     border-radius: 10px;
-    background: rgba(55, 55, 55, 0.10);
+    background: rgba(55, 55, 55, 0.1);
     border: none;
     cursor: pointer;
-`
+`;
 
 export const CartNameContainer = styled.div`
-    @media only screen and (max-width: 1245px){
+    @media only screen and (max-width: 1245px) {
         display: flex;
         justify-content: space-between;
     }
-`
+`;
