@@ -17,7 +17,6 @@ import Registrate from "./others/Registrate";
 import ScrollToTop from "./scrollToTop";
 import CartComponent from "./cart/cart";
 import MotorCartCompontent from "./cart/motorCart";
-// import CaravanCartComponent from "./cart/caravanCart";
 import CaravanCartComponent from "./cart/caravanCart";
 import TuningCartComponent from "./cart/tuningCart";
 import UsedCarCartComponent from "./cart/usedCar";
@@ -26,7 +25,12 @@ const RouterComponent = () => {
     const location = useLocation();
     const showNavbar = location.pathname !== "/registrate";
     const showFooter =
-        location.pathname !== "/registrate" && location.pathname !== "/cart";
+        location.pathname !== "/registrate" &&
+        location.pathname !== "/cart" &&
+        !location.pathname.startsWith("/MotorCart/") &&
+        !location.pathname.startsWith("/caravanCart/") &&
+        !location.pathname.startsWith("/tuningCart/") &&
+        !location.pathname.startsWith("/used-car/cart/");
 
     return (
         <div>
@@ -37,41 +41,20 @@ const RouterComponent = () => {
                 <Route path="/" element={<MainComponent />} />
                 <Route path="/motor" element={<Motor />} />
                 <Route path="/motor/:id" element={<DetailsComponent />} />
-                <Route
-                    path="/caravan/:id"
-                    element={<CaravanCarinfoComponent />}
-                />
+                <Route path="/caravan/:id" element={<CaravanCarinfoComponent />} />
                 <Route path="/tuning" element={<TuningComponents />} />
-                <Route path="tuning/:id" element={<TuningCarinfoComponent />} />
+                <Route path="/tuning/:id" element={<TuningCarinfoComponent />} />
                 <Route path="/used-car/:id" element={<UsedCarCarinfo />} />
                 <Route path="/caravan" element={<CaravanComponent />} />
                 <Route path="/used-car" element={<UsedCarComponent />} />
-                <Route
-                    path="/camping-place"
-                    element={<CampingPlaceComponents />}
-                />
-                <Route
-                    path="/camping-place/:id"
-                    element={<CampingPlaceCarinfo />}
-                />
+                <Route path="/camping-place" element={<CampingPlaceComponents />} />
+                <Route path="/camping-place/:id" element={<CampingPlaceCarinfo />} />
                 <Route path="/registrate" element={<Registrate />} />
                 <Route path="/cart" element={<CartComponent />} />
-                <Route
-                    path="/MotorCart/:id"
-                    element={<MotorCartCompontent />}
-                />
-                <Route
-                    path="/caravanCart/:id"
-                    element={<CaravanCartComponent />}
-                />
-                <Route
-                    path="/tuningCart/:id"
-                    element={<TuningCartComponent />}
-                />
-                <Route
-                    path="/used-car/cart/:id"
-                    element={<UsedCarCartComponent />}
-                />
+                <Route path="/MotorCart/:id" element={<MotorCartCompontent />} />
+                <Route path="/caravanCart/:id" element={<CaravanCartComponent />} />
+                <Route path="/tuningCart/:id" element={<TuningCartComponent />} />
+                <Route path="/used-car/cart/:id" element={<UsedCarCartComponent />} />
             </Routes>
 
             {showFooter && <Footer />}
