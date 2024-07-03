@@ -106,7 +106,7 @@ const CartComponent = () => {
                                     <CartTitleText $cartName>
                                         Cart Name
                                     </CartTitleText>
-                                    <MotorsCost $carinfoCost>
+                                    <MotorsCost $carinfoCost $cart>
                                         50,000,000￦
                                     </MotorsCost>
                                 </CartNameContainer>

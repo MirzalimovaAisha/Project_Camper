@@ -13,7 +13,7 @@ body {
     background: #fafafa;
 }
 
-input:focus {  
+input:focus {
     outline: none;
 }
 
@@ -93,55 +93,51 @@ input:focus {
 .custom-carousel .react-multi-carousel-item {
     display: flex;
     justify-content: center;
-
 }
 
-.dropdown{
+.dropdown {
     display: flex;
 }
 
-@media only screen and (max-width:700px){
-    .dropdown{
+@media only screen and (max-width: 700px) {
+    .dropdown {
         display: none;
     }
 }
 
-
 .cartSwiper .swiper-button-next,
-.cartSwiper .swiper-button-prev{
-    background: #006DAB;
+.cartSwiper .swiper-button-prev {
+    background: #006dab;
 }
 
 /* .swiperImg{
     height: 456px;
 } */
-.swiper-zoom-container img{
+.swiper-zoom-container img {
     width: 683px !important;
     height: 406px !important;
     object-fit: cover !important;
     top: 0;
     margin-top: 20px;
 }
-@media only screen and (max-width: 817px){
-    .swiper-zoom-container img{
+@media only screen and (max-width: 817px) {
+    .swiper-zoom-container img {
         width: 480px !important;
         height: 280px !important;
     }
-
 }
-@media only screen and (max-width: 700px){
-    .swiper-zoom-container img{
+@media only screen and (max-width: 700px) {
+    .swiper-zoom-container img {
         width: 334px !important;
         height: 199px !important;
         margin-top: 10px;
     }
     .cartSwiper .swiper-button-next,
-    .cartSwiper .swiper-button-prev{
+    .cartSwiper .swiper-button-prev {
         display: none;
     }
-
 }
-.swiper-zoom-container{
+.swiper-zoom-container {
     height: 100%;
     position: relative;
 }
@@ -153,9 +149,39 @@ input:focus {
 }
 
 .cartSwiper .swiper-button-next {
-    right: -14px; 
+    right: -14px;
 }
-  
+
 .cartSwiper .swiper-button-prev {
-   left: -14px; 
+    left: -14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+.left-container {
+    position: fixed;
+    width: 200px;
+    /* height: 100vh; */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-container {
+    margin-left: 200px;
+    padding: 20px;
+    width: calc(100% - 200px);
 }

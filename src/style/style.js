@@ -1165,6 +1165,8 @@ export const CartContainer = styled.div`
     justify-content: center;
     margin-top: ${(props) => (props.$container ? "40px" : "")};
     gap: ${(props) => (props.$container ? "" : "45px")};
+    /* overflow: ${(props) => (props.$container ? "hidden" : "")}; */
+    position: relative;
     @media only screen and (max-width: 1245px) {
         flex-direction: column;
         align-items: center;
@@ -1174,7 +1176,13 @@ export const CartContainer = styled.div`
 export const CartImgContainer = styled.div`
     width: 811px;
     height: 476px;
-    position: relative;
+    /* position: fixed;
+    left:200px; */
+    /* left: 20%; */
+    @media only screen and (max-width: 1245px) {
+        /* position: relative !important;
+        left: 0; */
+    }
     @media only screen and (max-width: 817px) {
         width: 600px;
         height: 350px;
@@ -1204,10 +1212,11 @@ export const CartPurchase = styled.div`
     }
 `;
 export const CartTextContainer = styled.div`
-    /* margin-top: 17px;/ */
     display: flex;
     flex-direction: column;
     width: 311px;
+    /* margin-left: 700px; */
+    /* padding: 0px 0px 150px; */
     overflow-y: scroll;
     height: 476px;
     ::-webkit-scrollbar {
@@ -1217,7 +1226,8 @@ export const CartTextContainer = styled.div`
     -ms-overflow-style: none;
     scrollbar-width: none;
     @media only screen and (max-width: 1245px) {
-        overflow-y: visible;
+        /* overflow-y: visible; */
+        margin-left: 0;
         height: auto;
         width: 678px;
     }
@@ -1285,3 +1295,5 @@ export const CartNameContainer = styled.div`
         justify-content: space-between;
     }
 `;
+
+

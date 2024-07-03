@@ -47,14 +47,12 @@ const Motor = () => {
     const data = campcar.maindata;
 
     const [active, setActive] = useState(true);
-    function handleGridMenu(){
+    function handleGridMenu() {
         setActive(true);
-    };
-    function handleVMenu(){
-        setActive(false)
-    };
-
-    
+    }
+    function handleVMenu() {
+        setActive(false);
+    }
 
     return (
         <div>
@@ -312,11 +310,19 @@ const Motor = () => {
 
                             <MotorLeftTopLeftRight>
                                 <MotorLeftInputImgs>
-                                    <MotorLeftImgs  onClick={handleGridMenu}>
-                                        <Imgwrapper src={fourDots}/>
+                                    <MotorLeftImgs onClick={handleGridMenu}>
+                                        <img
+                                            src={fourDots}
+                                            alt="img"
+                                            style={{ pointerEvents: "none" }}
+                                        />
                                     </MotorLeftImgs>
-                                    <MotorLeftImgs $right  onClick={handleVMenu}>
-                                        <Imgwrapper src={roundView}/>
+                                    <MotorLeftImgs $right onClick={handleVMenu}>
+                                        <img
+                                            src={roundView}
+                                            alt="img"
+                                            style={{ pointerEvents: "none" }}
+                                        />
                                     </MotorLeftImgs>
                                 </MotorLeftInputImgs>
                             </MotorLeftTopLeftRight>
@@ -328,7 +334,7 @@ const Motor = () => {
                             <MotorLeftInput>
                                 <input type="text" placeholder="Select" />
                                 <MotorLeftDownArrow>
-                                    <Imgwrapper src={downArrowInput} />
+                                    <img src={downArrowInput} alt="img" />
                                 </MotorLeftDownArrow>
                             </MotorLeftInput>
 
@@ -340,17 +346,17 @@ const Motor = () => {
                             </MotorLeftInput>
 
                             <MotorLeftInputImgs $desktop>
-                                <MotorLeftImgs>
-                                    <Imgwrapper src={fourDots} onClick={handleGridMenu} />
+                                <MotorLeftImgs onClick={handleGridMenu}>
+                                    <img src={fourDots} alt="img" />
                                 </MotorLeftImgs>
-                                <MotorLeftImgs $right>
-                                    <Imgwrapper src={roundView} onClick={handleVMenu}/>
+                                <MotorLeftImgs $right onClick={handleVMenu}>
+                                    <img src={roundView} alt="img" />
                                 </MotorLeftImgs>
                             </MotorLeftInputImgs>
                         </MotorLeftTopRight>
                     </MotorsRightContainerTop>
 
-                    {active? <GridMenu /> : <VMenu />}
+                    {active ? <GridMenu /> : <VMenu />}
                 </MotorsRightContainer>
             </MotorsContainer>
         </div>
