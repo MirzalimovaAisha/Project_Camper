@@ -54,6 +54,39 @@ const Motor = () => {
         setActive(false);
     }
 
+    const [search, setSearch] = useState(data);
+    const handleCange = (e) => {
+        const searchQueary = e.target.value.toLowerCase();
+        setSearch(
+            data.filter((a) => a.car.name.toLowerCase().includes(searchQueary))
+        );
+    };
+
+    const [selectedCompanies, setSelectedCompanies] = useState([]);
+
+    const handleCompanyChange = (filterItem) => {
+        const isSelected = selectedCompanies.includes(filterItem);
+        setSelectedCompanies(
+            isSelected
+                ? selectedCompanies.filter((item) => item !== filterItem)
+                : [...selectedCompanies, filterItem]
+        );
+    };
+
+    const filteredData = data.filter(
+        (item) =>
+            selectedCompanies.length === 0 ||
+            selectedCompanies.includes(item.car.company) ||
+            selectedCompanies.includes(item.car.license) ||
+            selectedCompanies.includes(item.car.people) ||
+            selectedCompanies.includes(item.car.location)
+    );
+
+    // 중복을 제거한 고유한 회사 목록을 생성합니다.
+    const uniqueCompanies = data
+        .map((item) => item.car.company)
+        .filter((value, index, self) => self.indexOf(value) === index);
+
     return (
         <div>
             <Header />
@@ -61,7 +94,11 @@ const Motor = () => {
             <MotorsContainer>
                 <MotorsLeftContainer>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -79,7 +116,10 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftTextInputContainer>
                                     <MotorsLeftTextInput>
@@ -95,7 +135,11 @@ const Motor = () => {
                         </Accordion>
                     </AccordionGroup>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -113,27 +157,40 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Aidal</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Knal</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>escape</div>
-                                    </MotorsCheckBoxInput>
+                                    {data.map((value) => (
+                                        <MotorsCheckBoxInput key={value.id}>
+                                            <input
+                                                id={`brand-${value.id}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleCompanyChange(
+                                                        value.car.name
+                                                    )
+                                                }
+                                            />
+                                            <label
+                                                htmlFor={`brand-${value.id}`}
+                                            >
+                                                {value.car.name}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
                     </AccordionGroup>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -151,23 +208,36 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>escape</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Aidal</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniqueCompanies.map((company, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`brand-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleCompanyChange(company)
+                                                }
+                                            />
+                                            <label htmlFor={`brand-${index}`}>
+                                                {company}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
                     </AccordionGroup>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -185,7 +255,10 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftCheckInputContainer>
                                     <MotorsCheckBoxInput>
@@ -205,7 +278,11 @@ const Motor = () => {
                         </Accordion>
                     </AccordionGroup>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -223,7 +300,10 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftCheckInputContainer>
                                     <MotorsCheckBoxInput>
@@ -243,7 +323,11 @@ const Motor = () => {
                         </Accordion>
                     </AccordionGroup>
                     <AccordionGroup
-                        sx={{ padding: "0", margin: "0px", flexGrow: "0" }}
+                        sx={{
+                            padding: "0",
+                            margin: "0px",
+                            flexGrow: "0",
+                        }}
                     >
                         <Accordion
                             sx={{ padding: "0", margin: "0px" }}
@@ -261,7 +345,10 @@ const Motor = () => {
                             </AccordionSummary>
                             <MotorLeftLine></MotorLeftLine>
                             <AccordionDetails
-                                sx={{ padding: "0", paddingInlineStart: "0" }}
+                                sx={{
+                                    padding: "0",
+                                    paddingInlineStart: "0",
+                                }}
                             >
                                 <MotorsLeftCheckInputContainer>
                                     <MotorsCheckBoxInput>
@@ -311,31 +398,22 @@ const Motor = () => {
                             <MotorLeftTopLeftRight>
                                 <MotorLeftInputImgs>
                                     <MotorLeftImgs onClick={handleGridMenu}>
-                                        <img
-                                            src={fourDots}
-                                            alt="img"
-                                            style={{ pointerEvents: "none" }}
-                                        />
+                                        <img src={fourDots} alt="img" />
                                     </MotorLeftImgs>
                                     <MotorLeftImgs $right onClick={handleVMenu}>
-                                        <img
-                                            src={roundView}
-                                            alt="img"
-                                            style={{ pointerEvents: "none" }}
-                                        />
+                                        <img src={roundView} alt="img" />
                                     </MotorLeftImgs>
                                 </MotorLeftInputImgs>
                             </MotorLeftTopLeftRight>
                         </MotorLeftTopLeft>
 
                         <MotorLeftTopRight>
-                            <div>Sort by</div>
-
                             <MotorLeftInput>
-                                <input type="text" placeholder="Select" />
-                                <MotorLeftDownArrow>
-                                    <img src={downArrowInput} alt="img" />
-                                </MotorLeftDownArrow>
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    onChange={handleCange}
+                                />
                             </MotorLeftInput>
 
                             <MotorLeftInput $small>
@@ -356,10 +434,15 @@ const Motor = () => {
                         </MotorLeftTopRight>
                     </MotorsRightContainerTop>
 
-                    {active ? <GridMenu /> : <VMenu />}
+                    {active ? (
+                        <GridMenu search={search} />
+                    ) : (
+                        <VMenu search={search} />
+                    )}
                 </MotorsRightContainer>
             </MotorsContainer>
         </div>
     );
 };
+
 export default Motor;

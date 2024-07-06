@@ -53,6 +53,15 @@ const TuningComponents = () => {
     function handleVMenu() {
         setActive(false);
     }
+
+    const [search, setSearch] = useState(data);
+    const handleCange = (e) => {
+        const searchQueary = e.target.value.toLowerCase();
+        setSearch(
+            data.filter((a) => a.tuning.name.toLowerCase().includes(searchQueary))
+        );
+    };
+
     return (
         <div>
             <TuningHeader />
@@ -320,13 +329,9 @@ const TuningComponents = () => {
                         </MotorLeftTopLeft>
 
                         <MotorLeftTopRight>
-                            <div>Sort by</div>
 
                             <MotorLeftInput>
-                                <input type="text" placeholder="Select" />
-                                <MotorLeftDownArrow>
-                                    <Imgwrapper src={downArrowInput} />
-                                </MotorLeftDownArrow>
+                                <input type="text" placeholder="Search" onChange={handleCange}/>
                             </MotorLeftInput>
 
                             <MotorLeftInput $small>
@@ -347,7 +352,7 @@ const TuningComponents = () => {
                         </MotorLeftTopRight>
                     </MotorsRightContainerTop>
 
-                    {active ? <GridMenu /> : <VMenu />}
+                    {active ? <GridMenu  search={search}/> : <VMenu  search={search}/>}
                 </MotorsRightContainer>
             </MotorsContainer>
         </div>

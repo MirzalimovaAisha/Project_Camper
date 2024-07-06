@@ -16,17 +16,15 @@ import { Link } from "react-router-dom";
 import star from "../../../assets/star.svg";
 
 import { Imgwrapper } from "../../../style/navbarStyle";
-import { tuning } from "../../data/tuning";
-import { usedCar } from "../../data/usedCar";
 import { caravan } from "../../data/caravan";
 
-const VMenu = () => {
+const VMenu = ({search}) => {
   const data = caravan.maindata;
 
   return (
     <div style={{ width: "100%", display:"flex", justifyContent:"center" }}>
       <VMenuContainer $vMenu>
-        {data.map((value) => {
+        {search.map((value, index) => {
           return (
             <Link to={`/caravan/${value.id}`}>
               <VMenuItems key={value.id}>

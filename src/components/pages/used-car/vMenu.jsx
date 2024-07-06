@@ -18,13 +18,13 @@ import star from "../../../assets/star.svg";
 import { Imgwrapper } from "../../../style/navbarStyle";
 import { usedCar } from "../../data/usedCar";
 
-const VMenu = () => {
+const VMenu = ({search}) => {
   const data = usedCar.maindata;
 
   return (
     <div style={{ width: "100%", display:"flex", justifyContent:"center" }}>
       <VMenuContainer $vMenu>
-        {data.map((value) => {
+        {search.map((value) => {
           return (
             <Link to={`/used-car/${value.id}`}>
               <VMenuItems key={value.id}>

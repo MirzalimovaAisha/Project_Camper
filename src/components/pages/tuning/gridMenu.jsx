@@ -18,13 +18,13 @@ import star from "../../../assets/star.svg";
 import { Imgwrapper } from "../../../style/navbarStyle";
 import { tuning } from "../../data/tuning";
 
-const GridMenu = () => {
+const GridMenu = ({search}) => {
   const data = tuning.maindata;
 
   return (
     <div>
       <MotorRightBox>
-        {data.map((value) => {
+        {search.map((value) => {
           return (
             <Link to={`/tuning/${value.id}`}>
               <MotorItems key={value.id}>

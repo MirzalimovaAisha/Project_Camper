@@ -18,13 +18,13 @@ import star from "../../../assets/star.svg";
 import { Imgwrapper } from "../../../style/navbarStyle";
 import { caravan } from "../../data/caravan";
 
-const GridMenu = () => {
+const GridMenu = ({search}) => {
   const data = caravan.maindata;
 
   return (
     <div>
       <MotorRightBox>
-        {data.map((value) => {
+        {search.map((value, index) => {
           return (
             <Link to={`/caravan/${value.id}`}>
               <MotorItems key={value.id}>

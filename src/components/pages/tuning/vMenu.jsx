@@ -18,13 +18,13 @@ import star from "../../../assets/star.svg";
 import { Imgwrapper } from "../../../style/navbarStyle";
 import { tuning } from "../../data/tuning";
 
-const VMenu = () => {
+const VMenu = ({search}) => {
   const data = tuning.maindata;
 
   return (
     <div style={{ width: "100%", display:"flex", justifyContent:"center" }}>
       <VMenuContainer $vMenu>
-        {data.map((value) => {
+        {search.map((value) => {
           return (
             <Link to={`/tuning/${value.id}`}>
               <VMenuItems key={value.id}>

@@ -11,7 +11,6 @@ export const MotorsLeftContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 3px;
     @media only screen and (max-width: 1245px) {
         display: none;
     }
@@ -64,6 +63,7 @@ export const MotorsCheckBoxInput = styled.div`
     color: #373737;
     font-size: 14px;
     font-weight: ${(props) => (props.$campingPlace ? "400" : "500")};
+    cursor: pointer;
 
     input {
         width: 22px;
@@ -117,7 +117,7 @@ export const MotorsRightContainer = styled.div`
         width: 100%;
         padding: 50px;
     }
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 756px) {
         width: 674px;
         padding: 0;
         /* padding: 50px; */
@@ -271,7 +271,7 @@ export const MotorsRightContainerTop = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    @media only screen and (max-width: 704px) {
+    @media only screen and (max-width: 756px) {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -281,7 +281,11 @@ export const MotorsRightContainerTop = styled.div`
 export const MotorLeftTopLeft = styled.div`
     display: flex;
     justify-content: space-between;
-    gap: 205px;
+    /* gap: 240px; */
+    width: 100%;
+    @media only screen and (max-width: 756px) {
+        padding: 0px 40px;
+    }
 `;
 export const MotorLeftTopLeftText = styled.div`
     display: flex;
@@ -290,7 +294,7 @@ export const MotorLeftTopLeftText = styled.div`
 `;
 export const MotorLeftTopLeftRight = styled.div`
     display: none;
-    @media only screen and (max-width: 703px) {
+    @media only screen and (max-width: 756px) {
         display: flex;
     }
 `;
@@ -306,11 +310,16 @@ export const MotorLeftTopRight = styled.div`
     display: flex;
     gap: 15px;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    @media only screen and (max-width: 756px) {
+        padding: 0px 40px;
+    }
 `;
 export const MotorLeftInput = styled.div`
     border-radius: 5px;
     border: 1px solid rgba(55, 55, 55, 0.3);
-    width: ${(props) => (props.$small ? "80px" : "227px")};
+    width: ${(props) => (props.$small ? "80px" : "350px")};
     height: 30px;
     display: flex;
     align-items: center;
@@ -320,16 +329,25 @@ export const MotorLeftInput = styled.div`
         background: none;
         border: none;
         padding: 8px 10px;
-
-        color: rgba(55, 55, 55, 0.6);
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 500;
+        color: black;
+        
+        &::placeholder{
+            color: rgba(55, 55, 55, 0.6);
+            
+        }
     }
+    @media only screen and (max-width: 756px) {
+        width: ${(props) => (props.$small ? "80px" : "250px")};
+
+    }
+
 `;
 export const MotorLeftDownArrow = styled.div`
     border-left: 1px solid rgba(55, 55, 55, 0.3);
-    border: 1px solid rgba(55, 55, 55, 0.3);
+    /* border: 1px solid rgba(55, 55, 55, 0.3); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,7 +373,7 @@ export const MotorLeftImgs = styled.div`
 `;
 export const MotorLeftInputImgs = styled.div`
     display: flex;
-    @media only screen and (max-width: 703px) {
+    @media only screen and (max-width: 756px) {
         display: ${(props) => (props.$desktop ? "none" : "flex")};
     }
 `;
