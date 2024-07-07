@@ -19,7 +19,7 @@ import CartComponent from "./cart/cart";
 import MotorCartCompontent from "./cart/motorCart";
 import CaravanCartComponent from "./cart/caravanCart";
 import TuningCartComponent from "./cart/tuningCart";
-import UsedCarCartComponent from "./cart/usedCar";
+import UsedCarCartComponent from "./cart/usedCarCart";
 
 const RouterComponent = () => {
     const location = useLocation();

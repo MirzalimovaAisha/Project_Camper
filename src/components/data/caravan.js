@@ -36,9 +36,10 @@ export const caravan = {
                 price: "40,000,000",
                 company: "다온티앤티",
                 rating: "5.3",
-                license: "6종 보통",
+                license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location: "수도권"
             }
         },
         {
@@ -49,9 +50,10 @@ export const caravan = {
                 price: "230,000,000",
                 company: "제일모빌",
                 rating: "5.0",
-                license: "5종 보통",
+                license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location: "경상권"
             }
         },
         {
@@ -62,9 +64,10 @@ export const caravan = {
                 price: "61,000,000",
                 company: "제일모빌",
                 rating: "8.9",
-                license: "3종 보통",
+                license: "1종 보통",
                 people: "1인",
                 date: "22년 03월",
+                location: "수도권"
             }
         },
         {
@@ -75,9 +78,10 @@ export const caravan = {
                 price: "10,000,000",
                 company: "다온티앤티",
                 rating: "2.7",
-                license: "3종 보통",
+                license: "1종 보통",
                 people: "6인",
                 date: "22년 03월",
+                location: "수도권"
             }
         },
         {
@@ -91,6 +95,7 @@ export const caravan = {
                 license: "2종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location: "충청권"
             }
         },
         {
@@ -101,9 +106,10 @@ export const caravan = {
                 price: "1,000,000,000",
                 company: "영남캠핑카",
                 rating: "9.1",
-                license: "3종 보통",
+                license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location: "충청권"
             }
         },
         {
@@ -117,6 +123,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location: "수도권"
             }
         },
         {
@@ -130,6 +137,7 @@ export const caravan = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location: "충청권"
             }
         },
         {
@@ -140,9 +148,10 @@ export const caravan = {
                 price: "67,000,000",
                 company: "영남캠핑카",
                 rating: "8.9",
-                license: "5종 보통",
+                license: "2종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -153,9 +162,10 @@ export const caravan = {
                 price: "25,000,000",
                 company: "제일모빌",
                 rating: "4.5",
-                license: "4종 보통",
+                license: "1종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -169,6 +179,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -179,9 +190,10 @@ export const caravan = {
                 price: "10,000,000",
                 company: "영남캠핑카",
                 rating: "1.0",
-                license: "4종 보통",
+                license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -192,9 +204,10 @@ export const caravan = {
                 price: "97,000,000",
                 company: "다온티앤티",
                 rating: "9.8",
-                license: "4종 보통",
+                license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -208,6 +221,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -221,6 +235,7 @@ export const caravan = {
                 license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -231,9 +246,10 @@ export const caravan = {
                 price: "85,000,000",
                 company: "스타모빌",
                 rating: "9.0",
-                license: "3종 보통",
+                license: "1종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -247,6 +263,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -257,9 +274,10 @@ export const caravan = {
                 price: "12,000,000",
                 company: "영남캠핑카",
                 rating: "1.5",
-                license: "4종 보통",
+                license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -273,6 +291,7 @@ export const caravan = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -283,9 +302,10 @@ export const caravan = {
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "9.5",
-                license: "5종 보통",
+                license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -299,6 +319,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "1인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -309,9 +330,10 @@ export const caravan = {
                 price: "74,500,000",
                 company: "다온티앤티",
                 rating: "7,6",
-                license: "3종 보통",
+                license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -322,9 +344,10 @@ export const caravan = {
                 price: "12,000,000",
                 company: "영남캠핑카",
                 rating: "1.5",
-                license: "3종 보통",
+                license: "2종 보통",
                 people: "5인",
                 date: "20년 01월",
+                location:"경상권"
             }
         },
         {
@@ -338,6 +361,7 @@ export const caravan = {
                 license: "2종 보통",
                 people: "1인",
                 date: "24년 08월",
+                location:"수도권"
             }
         },
         {
@@ -351,6 +375,7 @@ export const caravan = {
                 license: "1종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -361,9 +386,10 @@ export const caravan = {
                 price: "23,600,500",
                 company: "다온티앤티",
                 rating: "1.5",
-                license: "4종 보통",
+                license: "1종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
     ]

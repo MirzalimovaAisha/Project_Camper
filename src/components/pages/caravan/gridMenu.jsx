@@ -16,17 +16,15 @@ import { Link } from "react-router-dom";
 import star from "../../../assets/star.svg";
 
 import { Imgwrapper } from "../../../style/navbarStyle";
-import { caravan } from "../../data/caravan";
 
 const GridMenu = ({search}) => {
-  const data = caravan.maindata;
 
   return (
     <div>
       <MotorRightBox>
-        {search.map((value, index) => {
+        {search.map((value) => {
           return (
-            <Link to={`/caravan/${value.id}`}>
+            <Link to={`/caravan/${value.id}`} key={value.id}>
               <MotorItems key={value.id}>
                 <MotorItemImg>
                   <MotorImgs src={value.caravan.image} />

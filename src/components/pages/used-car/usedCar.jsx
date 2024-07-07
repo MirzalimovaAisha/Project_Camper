@@ -47,20 +47,149 @@ const UsedCarComponent = () => {
     const data = usedCar.maindata;
 
     const [active, setActive] = useState(true);
-    function handleGridMenu() {
-        setActive(true);
-    }
-    function handleVMenu() {
-        setActive(false);
-    }
-
     const [search, setSearch] = useState(data);
-    const handleCange = (e) => {
-        const searchQueary = e.target.value.toLowerCase();
+    const [selectedNames, setSelectedNames] = useState([]);
+    const [selectedCompanies, setSelectedCompanies] = useState([]);
+    const [selectedLicenses, setSelectedLicenses] = useState([]);
+    const [selectedPeople, setSelectedPeople] = useState([]);
+    const [selectedLocations, setSelectedLocations] = useState([]); // 새로운 상태 변수 추가
+
+    const handleGridMenu = () => {
+        setActive(true);
+    };
+
+    const handleVMenu = () => {
+        setActive(false);
+    };
+
+    const handleChange = (e) => {
+        const searchQuery = e.target.value.toLowerCase();
         setSearch(
-            data.filter((a) => a.used.name.toLowerCase().includes(searchQueary))
+            data.filter(
+                (item) =>
+                    item.used &&
+                    item.used.name &&
+                    item.used.name.toLowerCase().includes(searchQuery)
+            )
         );
     };
+
+    const handleNameChange = (name) => {
+        setSelectedNames((prevSelectedNames) => {
+            const isSelected = prevSelectedNames.includes(name);
+            if (isSelected) {
+                return prevSelectedNames.filter((item) => item !== name);
+            } else {
+                return [...prevSelectedNames, name];
+            }
+        });
+    };
+
+    const handleCompanyChange = (companyName) => {
+        setSelectedCompanies((prevSelectedCompanies) => {
+            const isSelected = prevSelectedCompanies.includes(companyName);
+            if (isSelected) {
+                return prevSelectedCompanies.filter(
+                    (item) => item !== companyName
+                );
+            } else {
+                return [...prevSelectedCompanies, companyName];
+            }
+        });
+    };
+
+    const handleLicenseChange = (licenseType) => {
+        setSelectedLicenses((prevSelectedLicenses) => {
+            const isSelected = prevSelectedLicenses.includes(licenseType);
+            if (isSelected) {
+                return prevSelectedLicenses.filter(
+                    (item) => item !== licenseType
+                );
+            } else {
+                return [...prevSelectedLicenses, licenseType];
+            }
+        });
+    };
+
+    const handlePeopleChange = (peopleCount) => {
+        setSelectedPeople((prevSelectedPeople) => {
+            const isSelected = prevSelectedPeople.includes(peopleCount);
+            if (isSelected) {
+                return prevSelectedPeople.filter(
+                    (item) => item !== peopleCount
+                );
+            } else {
+                return [...prevSelectedPeople, peopleCount];
+            }
+        });
+    };
+
+    const handleLocationChange = (location) => {
+        setSelectedLocations((prevSelectedLocations) => {
+            const isSelected = prevSelectedLocations.includes(location);
+            if (isSelected) {
+                return prevSelectedLocations.filter(
+                    (item) => item !== location
+                );
+            } else {
+                return [...prevSelectedLocations, location];
+            }
+        });
+    };
+
+    const filteredData = search.filter(
+        (item) =>
+            (selectedNames.length === 0 ||
+                selectedNames.includes(item.used.name)) &&
+            (selectedCompanies.length === 0 ||
+                selectedCompanies.includes(item.used.company)) &&
+            (selectedLicenses.length === 0 ||
+                selectedLicenses.includes(item.used.license)) &&
+            (selectedPeople.length === 0 ||
+                selectedPeople.includes(item.used.people)) &&
+            (selectedLocations.length === 0 ||
+                selectedLocations.includes(item.used.location)) // 새로운 필터 추가
+    );
+
+    const uniqueCarNames = Array.from(
+        new Set(data.map((item) => item.used.name.trim().toLowerCase()))
+    ).map((name) => {
+        return data.find(
+            (item) => item.used.name.trim().toLowerCase() === name
+        ).used.name;
+    });
+
+    const uniqueCompanies = Array.from(
+        new Set(data.map((item) => item.used.company.trim().toLowerCase()))
+    ).map((company) => {
+        return data.find(
+            (item) => item.used.company.trim().toLowerCase() === company
+        ).used.company;
+    });
+
+    const uniqueLicenses = Array.from(
+        new Set(data.map((item) => item.used.license.trim().toLowerCase()))
+    ).map((license) => {
+        return data.find(
+            (item) => item.used.license.trim().toLowerCase() === license
+        ).used.license;
+    });
+
+    const uniquePeople = Array.from(
+        new Set(data.map((item) => item.used.people.trim().toLowerCase()))
+    ).map((people) => {
+        return data.find(
+            (item) => item.used.people.trim().toLowerCase() === people
+        ).used.people;
+    });
+
+    const uniqueLocation = Array.from(
+        new Set(data.map((item) => item.used.location.trim().toLowerCase()))
+    ).map((location) => {
+        return data.find(
+            (item) => item.used.location.trim().toLowerCase() === location
+        ).used.location;
+    });
 
     return (
         <div>
@@ -124,18 +253,20 @@ const UsedCarComponent = () => {
                                 sx={{ padding: "0", paddingInlineStart: "0" }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Aidal</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Knal</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>escape</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniqueCarNames.map((name, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`car-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleNameChange(name)
+                                                }
+                                            />
+                                            <label htmlFor={`car-${index}`}>
+                                                {name}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
@@ -162,14 +293,20 @@ const UsedCarComponent = () => {
                                 sx={{ padding: "0", paddingInlineStart: "0" }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>escape</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Aidal</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniqueCompanies.map((value, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`company-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleCompanyChange(value)
+                                                }
+                                            />
+                                            <label htmlFor={`company-${index}`}>
+                                                {value}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
@@ -196,18 +333,20 @@ const UsedCarComponent = () => {
                                 sx={{ padding: "0", paddingInlineStart: "0" }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>1 year</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>2 year</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>1.5year</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniqueLicenses.map((value, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`license-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleLicenseChange(value)
+                                                }
+                                            />
+                                            <label htmlFor={`license-${index}`}>
+                                                {value}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
@@ -234,18 +373,20 @@ const UsedCarComponent = () => {
                                 sx={{ padding: "0", paddingInlineStart: "0" }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>2</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>3-4</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>5+</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniquePeople.map((value, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`people-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handlePeopleChange(value)
+                                                }
+                                            />
+                                            <label htmlFor={`people-${index}`}>
+                                                {value}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
@@ -272,18 +413,22 @@ const UsedCarComponent = () => {
                                 sx={{ padding: "0", paddingInlineStart: "0" }}
                             >
                                 <MotorsLeftCheckInputContainer>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Seoul</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Korea</div>
-                                    </MotorsCheckBoxInput>
-                                    <MotorsCheckBoxInput>
-                                        <input type="checkbox" />
-                                        <div>Busan</div>
-                                    </MotorsCheckBoxInput>
+                                    {uniqueLocation.map((value, index) => (
+                                        <MotorsCheckBoxInput key={index}>
+                                            <input
+                                                id={`location-${index}`}
+                                                type="checkbox"
+                                                onChange={() =>
+                                                    handleLocationChange(value)
+                                                }
+                                            />
+                                            <label
+                                                htmlFor={`location-${index}`}
+                                            >
+                                                {value}
+                                            </label>
+                                        </MotorsCheckBoxInput>
+                                    ))}
                                 </MotorsLeftCheckInputContainer>
                             </AccordionDetails>
                         </Accordion>
@@ -309,7 +454,7 @@ const UsedCarComponent = () => {
                             <MotorLeftTopLeftText>
                                 <MotorItemNumbers>Item</MotorItemNumbers>
                                 <MotorItemNumbers $number>
-                                    {data.length}
+                                    {filteredData.length}
                                 </MotorItemNumbers>
                                 <CarMenuContainer>
                                     <CarMenu />
@@ -337,9 +482,12 @@ const UsedCarComponent = () => {
                         </MotorLeftTopLeft>
 
                         <MotorLeftTopRight>
-
                             <MotorLeftInput>
-                                <input type="text" placeholder="Search" onChange={handleCange}/>
+                                <input
+                                    type="text"
+                                    placeholder="Search"
+                                    onChange={handleChange}
+                                />
                             </MotorLeftInput>
 
                             <MotorLeftInput $small>
@@ -368,7 +516,11 @@ const UsedCarComponent = () => {
                         </MotorLeftTopRight>
                     </MotorsRightContainerTop>
 
-                    {active ? <GridMenu search={search}/> : <VMenu search={search}/>}
+                    {active ? (
+                        <GridMenu search={filteredData} />
+                    ) : (
+                        <VMenu search={filteredData} />
+                    )}
                 </MotorsRightContainer>
             </MotorsContainer>
         </div>

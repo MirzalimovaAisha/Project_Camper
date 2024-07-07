@@ -63,7 +63,11 @@ export const MotorsCheckBoxInput = styled.div`
     color: #373737;
     font-size: 14px;
     font-weight: ${(props) => (props.$campingPlace ? "400" : "500")};
-    cursor: pointer;
+
+    :hover{
+
+        cursor: pointer;
+    }
 
     input {
         width: 22px;

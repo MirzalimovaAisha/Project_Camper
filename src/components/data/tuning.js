@@ -36,6 +36,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -49,6 +50,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "6인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -62,6 +64,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -75,6 +78,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -88,6 +92,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -101,6 +106,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "6인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -114,6 +120,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -127,6 +134,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -140,6 +148,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -153,6 +162,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "10인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -166,6 +176,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -179,6 +190,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -192,6 +204,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"충청권"
             }
         },
         {
@@ -205,6 +218,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "6인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -218,6 +232,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -231,6 +246,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "3인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -244,6 +260,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "10인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -257,6 +274,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -270,6 +288,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"경상권"
             }
         },
         {
@@ -283,6 +302,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "5인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -296,6 +316,7 @@ export const tuning = {
                 license: "1종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -309,6 +330,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -322,6 +344,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "2인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
         {
@@ -335,6 +358,7 @@ export const tuning = {
                 license: "2종 보통",
                 people: "4인",
                 date: "22년 03월",
+                location:"수도권"
             }
         },
     ]

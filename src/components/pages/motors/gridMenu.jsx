@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
     BlueButton,
     MotorBrand,
@@ -12,46 +13,37 @@ import {
     MotorsButtons,
     MotorsCost,
 } from "../../../style/style";
-import { Link } from "react-router-dom";
 import star from "../../../assets/star.svg";
-
 import { Imgwrapper } from "../../../style/navbarStyle";
-import { campcar } from "../../data/mockdata";
 
 const GridMenu = ({ search }) => {
-    const data = campcar.maindata;
-
     return (
         <div>
             <MotorRightBox>
-                {search.map((value, index) => {
-                    return (
-                        <Link to={`/motor/${value.id}`}>
-                            <MotorItems key={value.id}>
-                                <MotorItemImg>
-                                    <MotorImgs src={value.car.photo} />
-                                </MotorItemImg>
-                                <MotorItemTexts>
-                                    <MotorName $gridMenu>
-                                        {value.car.name}
-                                    </MotorName>
-                                    <MotorBrand>
-                                        <div>{value.car.company}</div>
-                                        <MotorRating>
-                                            <Imgwrapper src={star} />
-                                            <div>{value.car.rating}</div>
-                                        </MotorRating>
-                                    </MotorBrand>
-                                    <MotorsCost>{value.car.cost}</MotorsCost>
-                                    <MotorsButtons>
-                                        <BlueButton $blue>Order</BlueButton>
-                                        <BlueButton>Compare</BlueButton>
-                                    </MotorsButtons>
-                                </MotorItemTexts>
-                            </MotorItems>
-                        </Link>
-                    );
-                })}
+                {search.map((value) => (
+                    <Link to={`/motor/${value.id}`} key={value.id}>
+                        <MotorItems>
+                            <MotorItemImg>
+                                <MotorImgs src={value.car.photo} />
+                            </MotorItemImg>
+                            <MotorItemTexts>
+                                <MotorName $gridMenu>{value.car.name}</MotorName>
+                                <MotorBrand>
+                                    <div>{value.car.company}</div>
+                                    <MotorRating>
+                                        <Imgwrapper src={star} />
+                                        <div>{value.car.rating}</div>
+                                    </MotorRating>
+                                </MotorBrand>
+                                <MotorsCost>{value.car.cost}</MotorsCost>
+                                <MotorsButtons>
+                                    <BlueButton $blue>Order</BlueButton>
+                                    <BlueButton>Compare</BlueButton>
+                                </MotorsButtons>
+                            </MotorItemTexts>
+                        </MotorItems>
+                    </Link>
+                ))}
             </MotorRightBox>
         </div>
     );
