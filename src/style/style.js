@@ -324,6 +324,7 @@ export const MotorLeftInput = styled.div`
     border-radius: 5px;
     border: 1px solid rgba(55, 55, 55, 0.3);
     width: ${(props) => (props.$small ? "80px" : "350px")};
+    padding: ${(props) => (props.$small ? "" : "8px 10px 8px 0px")};
     height: 30px;
     display: flex;
     align-items: center;

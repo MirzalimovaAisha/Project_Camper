@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CiSearch } from "react-icons/ci";
 import {
     CarMenuContainer,
     MotorLeftLine,
@@ -478,6 +479,7 @@ const CaravanComponent = () => {
                                     placeholder="Search"
                                     onChange={handleChange}
                                 />
+                                <CiSearch />
                             </MotorLeftInput>
 
                             <MotorLeftInput $small>
